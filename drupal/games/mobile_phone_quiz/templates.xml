@@ -1,0 +1,31 @@
+<templates>
+  <template id="mpq-arena-view">
+    <![CDATA[
+      <ul id="mpq-progress">
+        <% _.each(_.range(questions.length), function(i) { %>
+          <% if (i == current) { %>
+            <li class="active"></li>
+          <% } else if (i < current) { %>
+            <li class="past"></li>
+          <% } else { %>
+            <li></li>
+          <% } %>
+        <% }) %>
+      </ul>
+      <div id="mpq-question">
+        <a id="mpq-start-quiz"><span>?</span></a>
+      </div>
+      <ul id="mpq-characters">
+        <li>
+          <a class="character" id="mpq-char-1"></a>
+        </li>
+        <li>
+          <a class="character" id="mpq-char-2"></a>
+        </li>
+        <li>
+          <a class="character" id="mpq-char-3"></a>
+        </li>
+      </ul>
+    ]]>
+  </template>
+</templates>

@@ -1,0 +1,40 @@
+<templates>
+  <template id="drawings">
+    <![CDATA[
+      <% if (drawings.length > 0) { %>
+        <ul id="cpa-drawings-pager" class="thumbNav game-pager">
+          <% _.each(_.range(Math.ceil(drawings.length / page_size)), function(i) { %>
+            <li>
+              <a><%= i+1 %></a>
+            </li>
+          <% }) %>
+        </ul>
+        <ul class="carousel-inner">
+          <li class="item active">
+            <% _(drawings).each(function(drawing, i) { %>
+              <% if (i && i % page_size == 0) { %>
+                </li>
+                <li class="item">
+              <% } %>
+              <a data-id="<%= drawing.get('id') %>">
+                <img src="<%= drawing.get('url') %>" alt="Drawing <%= drawing.get('id') %>"/>
+              </a>
+            <% }) %>
+          </li>
+        </ul>
+      <% } else { %>
+        <p><%= tr('Ei kuvia') %></p>
+      <% } %>
+    ]]>
+  </template>
+  <template id="drawing">
+    <![CDATA[
+      <div id="cpa-drawing-frame">
+        <img src="<%= drawing.get('url') %>" alt="Drawing <%= drawing.get('id') %>"/>
+      </div>
+      <div id="cpa-drawing-meta">
+        Lähettänyt: <b><%= drawing.get('user').name %></b>, <b><%= drawing.get('user').age %> v.</b>, <%= drawing.created() %>
+      </div>
+    ]]>
+  </template>
+</templates>

@@ -1,0 +1,35 @@
+<templates>
+  <template id="mpv-select-video">
+    <![CDATA[
+      <% if (videos.length == 0) { %>
+        <p>Ei videoita</p>
+      <% } else { %>
+        <ul id="mpv-videos">
+          <% _.each(videos, function(video, i) { %>
+            <li>
+              <a href="<%= videoUrl(video.id) %>" data-id="<%= video.get('id') %>">
+                <span><%= i+1 %></span>
+              </a>
+            </li>
+          <% }) %>
+        </ul>
+      <% } %>
+    ]]>
+  </template>
+  <template id="mpv-video">
+    <![CDATA[
+      <a class="game-button gb-close"></a>
+      <div id="mpv-video-frame">
+        <h1><%= video.get('title') %></h1>
+        <% if (video.get('embed')) { %>
+          <%= video.get('embed') %>
+        <% } %>
+        <% if (video.get('description')) { %>
+          <div id="mpv-description">
+            <%= video.get('description') %>
+          </div>
+        <% } %>
+      </div>
+    ]]>
+  </template>
+</templates>

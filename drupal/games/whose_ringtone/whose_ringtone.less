@@ -1,0 +1,55 @@
+.transition(@arguments) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  transition: @arguments;
+}
+
+#wrt-game-view {
+  background-color: #E0E3FF;
+  padding: 20px 50px;
+
+  .wrt-item {
+    width: 140px;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    border-radius: 70px;
+
+    input {
+      display: none;
+    }
+
+    img {
+      height: 120px;
+      padding: 10px;
+      border-radius: 60px;
+      .transition(~"all 0.3s");
+    }
+
+    input:checked + img {
+      opacity: 0.5;
+      box-shadow: 0 0 5px 3px #aaa;
+    }
+
+    input:disabled + img {
+      box-shadow: 0 0 5px 3px green;
+      background-color: rgba(100, 255, 100, 0.3);
+    }
+
+    &.error img {
+      box-shadow: 0 0 5px 3px red;
+      background-color: rgba(255, 100, 100, 0.3);
+    }
+
+    &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+      left: 80px;
+    }
+
+    &.locked {
+      box-shadow: 0 0 2px 5px #93bf38, inset 0 0 2px #93bf38;
+    }
+  }
+}

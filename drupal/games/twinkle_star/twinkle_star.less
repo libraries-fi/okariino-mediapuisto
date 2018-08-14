@@ -1,0 +1,209 @@
+
+.transition(@arguments) {
+  -moz-transition: @arguments;
+  -webkit-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments,
+}
+
+#ts-board {
+  background-color: #002B56;
+}
+
+#ts-stars {
+  width: 775px;
+  height: 483px;
+  position: relative;
+
+  li {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    cursor: pointer;
+    list-style-type: none;
+
+
+    a {
+      .transition(~"opacity 0.5s");
+
+      &.muted {
+        opacity: 0.3;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #ts-star-1 {
+    top: 150px;
+    right: 0px;
+  -moz-transform: rotate(170deg); //Mozilla
+  -webkit-transform: rotate(170deg); //Webkit
+  -o-transform: rotate(170deg); //0pera
+  -ms-transform: rotate(170deg); //IE9
+
+  img {
+    height: 90%;
+    width: 90%;
+  }
+  }
+
+  #ts-star-2 {
+    top: 260px;
+    right: 200px;
+
+  img {
+    height: 60%;
+    width: 60%;
+  }
+  }
+
+  #ts-star-3 {
+    bottom: 50px;
+    right: 150px;
+  -moz-transform: rotate(120deg); //Mozilla
+  -webkit-transform: rotate(120deg); //Webkit
+  -o-transform: rotate(120deg); //0pera
+  -ms-transform: rotate(120deg); //IE9
+
+  img {
+    height: 80%;
+    width: 80%;
+  }
+  }
+
+  #ts-star-4 {
+    top: 100px;
+    left: 300px;
+  -moz-transform: rotate(160deg); //Mozilla
+  -webkit-transform: rotate(160deg); //Webkit
+  -o-transform: rotate(160deg); //0pera
+  -ms-transform: rotate(160deg); //IE9
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  }
+
+  #ts-star-5 {
+    bottom: 140px;
+    left: 130px;
+  -moz-transform: rotate(190deg); //Mozilla
+  -webkit-transform: rotate(190deg); //Webkit
+  -o-transform: rotate(190deg); //0pera
+  -ms-transform: rotate(190deg); //IE9
+
+  img {
+    height: 85%;
+    width: 85%;
+  }
+  }
+
+  #ts-star-6 {
+    top: 5px;
+    left: 60px;
+  -moz-transform: rotate(150deg); //Mozilla
+  -webkit-transform: rotate(150deg); //Webkit
+  -o-transform: rotate(150deg); //0pera
+  -ms-transform: rotate(150deg); //IE9
+
+  img {
+    height: 75%;
+    width: 75%;
+  }
+  }
+}
+
+#ts-toggle-play {
+  background: url('/sites/default/themes/okariino/images/btn-h80.png') no-repeat;
+  background-position: -500px 0;
+  border-radius: 40px;
+  text-indent: -10000px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: none;
+  //box-shadow: 2px 2px 5px 0 #777;
+
+  //border: 1px solid rgba(50, 50, 50, 0.5);
+  //font-size: 50px;
+  //letter-spacing: -5px;
+  //background-color: rgba(200, 200, 210, 0.8);
+  //border-radius: 50px;
+  //box-shadow: 0 0 2px rgba(0, 0, 0, 0.4),
+  //   inset 0 -30px 20px rgba(0, 0, 10, 0.2);
+
+  &:hover {
+    box-shadow: 1px 1px 3px 0 #777;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px 2px #fff;
+  }
+
+  .pause {
+    display: none;
+  }
+
+  span {
+    margin-left: -5px;
+  }
+
+  &:active,
+  &.pressed {
+  background-position: -600px 0;
+    //background-color: rgba(200, 200, 210, 0.5);
+  }
+}
+
+#ts-seeker {
+  width: 600px; //560px;
+  height: 10px;
+  border: none; //5px solid rgba(255, 255, 255, 0.3);
+  margin-left: 140px;
+  position: absolute;
+  bottom: 34px; //10px;
+  //left: 20px;
+  border-radius: 5px; //3px;
+
+  #ts-seeker-grain {
+    min-width: 5px;
+    height: 10px; //20px;
+    background: #e0482a; //red;
+    position: absolute;
+    //top: -5px;
+    left: -5px;
+
+    border-radius: 4px; //20px;
+
+    .transition(~"width 0.5s linear");
+  }
+
+  .bar {
+  border: none;
+  }
+}
+
+#ts-loading-screen {
+  #ts-loading {
+    width: 40%;
+    color: white;
+    margin: 200px auto 0;
+
+    #ts-loading-progress {
+      height: 40px;
+    }
+
+  .bar {
+    margin-left: -5px;
+    border: none;
+  }
+
+  }
+}

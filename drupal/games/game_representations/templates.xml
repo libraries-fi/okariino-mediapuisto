@@ -1,0 +1,48 @@
+<templates>
+  <template id="grt-games-view">
+    <![CDATA[
+      <ul id="grt-games">
+        <% _(games).each(function(game) { %>
+          <li>
+            <a href="<%= gameUrl(game.id) %>">
+              <img src="<%= game.get('cover') %>" alt="cover <%= game.id %>"/>
+            </a>
+          </li>
+        <% }) %>
+      </ul>
+      <a id="grt-link-to-archive" href="<%= archiveUrl() %>">
+        <span>Arkisto</span>
+      </a>
+      <img class="jingle" src="sites/default/games/game_representations/images/olivia_jingle.png" data-jingle="game">
+    ]]>
+  </template>
+  <template id="grt-game-preview">
+    <![CDATA[
+      <div id="grt-game-cover-pane">
+        <div id="grt-game-cover">
+          <img src="<%= game.get('cover') %>" alt="#<%= game.get('cover') %>"/>
+        </div>
+      </div>
+      <div id="grt-game-content-pane">
+        <h1 id="grt-game-title"><%= game.get('title') %></h1>
+        <div id="grt-game-info"><%= game.get('description') %></div>
+        <% if (game.media.length) { %>
+          <ul id="grt-multimedia-list">
+            <% _.each(game.media.models, function(item, i) { %>
+              <li>
+                <a href="<%= mediaUrl(item.get('id')) %>">
+                  Foo: <%= item.get('title') %>
+                </a>
+              </li>
+            <% }) %>
+          </ul>
+        <% } %>
+      </div>
+    ]]>
+  </template>
+  <template id="grt-archive-view">
+    <![CDATA[
+
+    ]]>
+  </template>
+</templates>

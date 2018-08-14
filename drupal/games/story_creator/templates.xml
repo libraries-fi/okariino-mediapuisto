@@ -1,0 +1,48 @@
+<templates>
+  <template id="sc-book-view">
+    <![CDATA[
+      <link href="/sites/default/games/story_creator/print.css" rel="stylesheet" media="print"/>
+
+      <nav id="sc-book-nav">
+        <ol id="sc-pager">
+          <% _(items).each(function(item, i) { %>
+            <li><%= i+1 %></li>
+          <% }) %>
+        </ol>
+        <button type="button" id="sc-prev-page" class="sc-control left" data-dir="-1" disabled>
+          <span>&lt;</span>
+        </button>
+        <button type="button" id="sc-next-page" class="sc-control right" data-dir="1" disabled>
+          <span>&gt;</span>
+        </button>
+      </nav>
+      <article id="sc-book-frame">
+        <!-- Render pages here -->
+      </article>
+    ]]>
+  </template>
+  <template id="frontcover">
+    <![CDATA[
+      <aside class="objects">
+      </aside>
+      <section class="storyline">
+        <h1><%= title %></h1>
+      </section>
+    ]]>
+  </template>
+  <template id="page">
+    <![CDATA[
+      <aside class="objects">
+        <% _(characters).each(function(char, name) { %>
+          <label class="sc-character" data-name="<%= name %>">
+            <input type="radio" name="character" value="<%= name %>"/>
+            <img src="<%= char.icon %>"/>
+          </label>
+        <% }) %>
+      </aside>
+      <section class="storyline">
+        <!-- Story here -->
+      </section>
+    ]]>
+  </template>
+</templates>

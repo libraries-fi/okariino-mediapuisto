@@ -1,0 +1,29 @@
+<templates>
+  <template id="smp-select-story-view">
+    <![CDATA[
+      <ul class="thumbs maxed">
+        <% _(stories).each(function(item, i) { %>
+          <li data-story-id="<%= i %>">
+            <a href="<%= storyUrl(i) %>"><img src="<%= item.attributes.cover %>" alt="story <%= i %>"/></a>
+          </li>
+        <% }) %>
+      </ul>
+    ]]>
+  </template>
+  <template id="smp-story-view">
+    <![CDATA[
+      <ul id="smp-drags">
+        <% _(scenes.shuffle()).each(function(item, i) { %>
+          <li class="smp-drag">
+            <img src="<%= item.get('image') %>" alt="scene <%= item.id %>" data-value="<%= item.id %>"/>
+          </li>
+        <% }) %>
+      </ul>
+      <ol id="smp-drops">
+        <% scenes.each(function(item) { %>
+          <li class="smp-drop" data-answer="<%= item.id %>"></li>
+        <% }) %>
+      </ol>
+    ]]>
+  </template>
+</templates>

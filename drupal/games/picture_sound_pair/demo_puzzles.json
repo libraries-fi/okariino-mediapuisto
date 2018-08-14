@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "answer": "nokipoika",
+    "picture": "/sites/default/games/picture_sound_pair/images/bubble_boy.png",
+    "thumb": "/sites/default/games/picture_sound_pair/images/thumb1.png"
+  },
+  {
+    "id": 2,
+    "answer": "rabbit",
+    "picture": "/sites/default/games/picture_sound_pair/images/bubble_rabbit.png",
+    "thumb": "/sites/default/games/picture_sound_pair/images/thumb2.png"
+  },
+  {
+    "id": 3,
+    "answer": "elephant",
+    "picture": "/sites/default/games/picture_sound_pair/images/bubble_fants.png",
+    "thumb": "/sites/default/games/picture_sound_pair/images/thumb3.png"
+  },
+  {
+    "id": 4,
+    "answer": "frogs",
+    "picture": "/sites/default/games/picture_sound_pair/images/bubble_frogs.png",
+    "thumb": "/sites/default/games/picture_sound_pair/images/thumb4.png"
+  }
+]

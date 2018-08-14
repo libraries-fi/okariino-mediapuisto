@@ -1,0 +1,83 @@
+<!-- Underscore.js templates for the widgets -->
+<templates>
+  <template id="ferris-wheel-view">
+    <![CDATA[
+      <a id="mfw-launch-archive"></a>
+      <div id="mfw-wheel">
+        <a id="mfw-toggle-scroll">
+          <img id="mfw-toggle-scroll-device" src="/sites/default/games/musical_ferris_wheel/images/kampi.gif" alt="toggle scroll" />
+        </a>
+      </div>
+
+      <div id="mfw-current-album">
+
+      </div>
+			<img class="jingle" src="sites/default/games/musical_ferris_wheel/images/olivia_jingle.png" data-jingle="bookfun"/>
+    ]]>
+  </template>
+  <template id="album-view">
+    <![CDATA[
+      <a>
+        <img src="<%= album.get('cover') %>" alt="<%= album.get('title') %>"/>
+      </a>
+    ]]>
+  </template>
+  <template id="media">
+    <![CDATA[
+
+    ]]>
+  </template>
+  <template id="album-info-view">
+    <![CDATA[
+      <div id="mfw-album-info-header">
+        <img id="mfw-album-cover" src="<%= album.get('cover') %>" alt="mfw album cover"/>
+       </div>
+
+      <div id="mfw-album-info-content">
+      <h1><%= album.get('title') %></h1>
+        <div id="mfw-album-description">
+          <%= album.get('description') %>
+        </div>
+        <% if (album.sources.length > 0) { %>
+          <ul id="mfw-media">
+            <% album.sources.each(function(item, i) { %>
+              <li>
+                <a data-id="<%= i %>" data-type="<%= item.get('category') %>">
+                  <%= item.get('category') %>: <%= item.get('title') %>
+                </a>
+              </li>
+            <% }) %>
+          </ul>
+        <% } %>
+      </div>
+    ]]>
+  </template>
+  <template id="archive">
+    <![CDATA[
+      <% if (albums.length == 0) { %>
+        <p>Ei musiikkilevyjä</p>
+      <% } else { %>
+        <ul id="mfw-archive-pager" class="game-pager">
+          <% _.each(_.range(Math.ceil(albums.length / pageSize)), function(i) { %>
+            <li>
+              <a><%= i+1 %></a>
+            </li>
+          <% }) %>
+        </ul>
+        <ul class="game-slider carousel-inner slide" id="mfw-archive-slider">
+          <li class="item active">
+            <% _(albums).each(function(album, i) { %>
+              <% if (i && i % pageSize == 0) { %>
+                </li>
+                <li class="item">
+              <% } %>
+              <a data-id="<%= album.get('id') %>">
+                <img src="<%= album.get('cover') %>" alt="<%= album.get('title') %>"/>
+              </a>
+            <% }) %>
+          </li>
+        </ul>
+      <% } %>
+    ]]>
+  </template>
+</templates>

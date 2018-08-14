@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "First video",
+    "embed": "<p>embedded player #1</p>"
+  },
+  {
+    "id": 2,
+    "title": "First video",
+    "embed": "<p>embedded player #2</p>"
+  },
+  {
+    "id": 3,
+    "title": "First video",
+    "embed": "<p>embedded player #3</p>"
+  },
+  {
+    "id": 4,
+    "title": "First video",
+    "embed": "<p>embedded player #4</p>"
+  },
+  {
+    "id": 5,
+    "title": "First video",
+    "embed": "<p>embedded player #5</p>"
+  },
+  {
+    "id": 6,
+    "title": "First video",
+    "embed": "<iframe width=\"640\" height=\"360\" src=\"//www.youtube.com/embed/tSZ8uLAhS4I\" frameborder=\"0\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 7,
+    "title": "First video",
+    "embed": "<p>embedded player #7</p>"
+  },
+  {
+    "id": 8,
+    "title": "First video",
+    "embed": "<p>embedded player #8</p>"
+  },
+  {
+    "id": 9,
+    "title": "First video",
+    "embed": "<p>embedded player #9</p>"
+  }
+]

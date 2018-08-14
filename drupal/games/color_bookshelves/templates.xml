@@ -1,0 +1,31 @@
+<templates>
+  <template id="main">
+    <![CDATA[
+      <div id="cbs-shelf-frame">
+        <!-- Render bookshelf here -->
+      </div>
+      <div id="cbs-books-frame">
+        <!-- Render books here -->
+      </div>
+    ]]>
+  </template>
+  <template id="shelf">
+    <![CDATA[
+      <ul id="cbs-bookshelf">
+        <% _(colors).each(function(color, i) { %>
+          <li class="cbs-shelf <%= color %>" data-color="<%= color %>"></li>
+        <% }) %>
+      </ul>
+    ]]>
+  </template>
+  <template id="books">
+    <![CDATA[
+      <div id="cbs-cat">CAT</div>
+      <ul id="cbs-books">
+        <% _(books).each(function(book) { %>
+          <li class="cbs-book <%= book.color %>" data-color="<%= book.color %>" style="left: <%= book.x %>px; top: <%= book.y %>px; -webkit-transform: rotate(<%= book.d %>deg)">Book</li>
+        <% }) %>
+      </ul>
+    ]]>
+  </template>
+</templates>

@@ -1,0 +1,52 @@
+
+[
+  {
+    "image": "/sites/default/games/memory_game/images/mp3_player.jpg",
+    "name": "mp3_player"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/tv.jpg",
+    "name": "television"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/mobile_phone.jpg",
+    "name": "mobile_phone"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/gaming_console.jpg",
+    "name": "gaming_console"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/cdrom.jpg",
+    "name": "cdrom"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/video_camera.jpg",
+    "name": "video_camera"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/laptop.jpg",
+    "name": "laptop"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/radio.jpg",
+    "name": "radio"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/camera.jpg",
+    "name": "camera"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/headphones.jpg",
+    "name": "headphones"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/magazine.jpg",
+    "name": "magazine"
+  },
+  {
+    "image": "/sites/default/games/memory_game/images/news_paper.jpg",
+    "name": "news_paper"
+  }
+]
+

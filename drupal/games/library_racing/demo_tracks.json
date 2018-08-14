@@ -1,0 +1,25 @@
+[
+  {
+    "pixmaps": {
+      "track": "track_one/track_one.jpeg",
+      "map": "track_one/track_one_map.png"
+    },
+    "thumbnail": "/sites/default/games/library_racing/images/track_one/track_one_thumb.jpeg",
+    "start": {
+      "x": 3010,
+      "y": 2650
+    }
+  },
+  {
+    "pixmaps": {
+      "track": "track_two/track_two.jpeg",
+      "map": "track_two/track_two_map.png"
+    },
+    "thumbnail": "/sites/default/games/library_racing/images/track_two/track_two_thumb.jpeg",
+    "start": {
+      "x": 3035,
+      "y": 2860
+    }
+  }
+]
+

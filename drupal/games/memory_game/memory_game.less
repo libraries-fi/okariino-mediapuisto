@@ -1,0 +1,137 @@
+.transition(@attributes) {
+  -moz-transition: @attributes;
+  -webkit-transition: @attributes;
+  -o-transition: @attributes;
+  transition: @attributes;
+}
+
+#mg-board {
+  background-color: #d2ebf0;
+
+  > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+#mg-levels {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+	margin-left: -35px;
+  margin-top: 160px;
+
+  li {
+    width: 220px;
+    height: 136px;
+    //border: 1px solid #222;
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+#mg-cards {
+
+  &.pairs-4 {
+    width: 700px;
+    margin: 75px 0 0 75px;
+
+    img {
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  &.pairs-8 {
+    width: 550px;
+    margin-top: 12px;
+    margin-left: 200px;
+
+    img {
+      width: 111px;
+      height: 111px;
+    }
+  }
+
+  &.pairs-9 {
+    width: 715px;
+    margin-top: 65px;
+    margin-left: 65px;
+
+    img {
+      width: 111px;
+      height: 111px;
+    }
+  }
+
+  &.pairs-12 {
+    width: 715px;
+    margin-top: 8px;
+    margin-left: 8px;
+
+    li {
+      margin-right: 3px;
+    }
+
+    img {
+      width: 111px;
+      height: 111px;
+    }
+  }
+
+  li {
+    background-color: rgba(50, 50, 100, 0.3);
+    margin: 3px;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0);
+    text-align: center;
+    vertical-align: top;
+    z-index: 1;
+
+    &.active {
+      z-index: 50;
+      box-shadow: 0 0 5px 3px black;
+
+      img {
+        opacity: 1;
+      }
+    }
+
+    &.locked {
+      img {
+        opacity: 1;
+      }
+    }
+
+    &.error {
+      z-index: 50;
+      box-shadow: 0 0 5px 3px red;
+
+      img {
+        opacity: 1;
+      }
+    }
+
+    &.success {
+      z-index: 50;
+      box-shadow: 0 0 5px 3px green;
+
+      img {
+        opacity: 1;
+      }
+    }
+
+
+  }
+
+  img {
+    display: block;
+    background-color: blue;
+    opacity: 0;
+    cursor: pointer;
+
+    .transition(~"all 1s");
+  }
+}

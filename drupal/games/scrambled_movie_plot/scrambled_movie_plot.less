@@ -1,0 +1,111 @@
+#smp-board {
+  background-color: #7ec6d6;
+}
+
+#smp-select-story-view {
+  background-color: #000;
+
+  .thumbs {
+    margin-top: 120px;
+
+    li {
+      margin: 0 30px 30px 0;
+
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
+
+#smp-story-view {
+
+}
+
+#smp-drags {
+  list-style-type: none;
+
+  li {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(100, 100, 100, 0.1);
+    border: 3px solid #55828c;
+    position: absolute !important;
+
+    &:nth-child(1) {
+      top: 15px;
+      left: 260px
+    }
+
+    &:nth-child(2) {
+      top: 25px;
+      right: 260px;
+    }
+
+    &:nth-child(3) {
+      bottom: 17px;
+      left: 160px;
+    }
+
+    &:nth-child(4) {
+      bottom: 6px;
+      left: 380px;
+    }
+
+    &:nth-child(5) {
+      bottom: 25px;
+      right: 180px;
+    }
+
+    img {
+      width: inherit;
+      height: inherit;
+      z-index: 999;
+      background: red;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+#smp-drops {
+  position: absolute;
+  top: 155px;
+  width: 100%;
+  height: 166px;
+  background: url('/sites/default/games/scrambled_movie_plot/images/film.jpg');
+  height: 120px;
+  padding: 22px 0 15px 80px;
+  margin: 0;
+  list-style-type: none;
+
+  li {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #aaa;
+    margin: 0 15px 0 0;
+    background: url('images/scene-placemarker.png') left top no-repeat;
+    float: left;
+
+    &:first-of-type {
+      margin-left: 50px;
+    }
+
+    &.correct {
+      box-shadow: 0 0 8px 3px green;
+    }
+
+    &.error {
+      box-shadow: 0 0 8px 3px red;
+    }
+
+    img {
+      width: inherit;
+      height: inherit;
+      vertical-align: text-top;
+      display: block;
+    }
+  }
+}

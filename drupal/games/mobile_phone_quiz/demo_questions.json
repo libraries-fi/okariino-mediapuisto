@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "text": "Missä suljet kännykän?",
+      "sound": "turnoff"
+    },
+    "characters": [
+      {
+        "image": "char1.png"
+      },
+      {
+        "image": "char2.png"
+      },
+      {
+        "image": "char3.png"
+      }
+    ],
+    "answers": [
+      {
+        "text": "Teatterissa",
+        "sound": "q1_theater",
+        "image": "answers/theater.png",
+        "correct": true
+      },
+      {
+        "text": "Bussissa",
+        "sound": "q1_bus",
+        "image": "answers/bus.png"
+      },
+      {
+        "text": "Vessassa",
+        "sound": "q1_toilet",
+        "image": "answers/toilet.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "text": "Missä laitat kännykän äänettömälle tai värinähälytykselle?",
+      "sound": "silent"
+    },
+    "answers": [
+      {
+        "text": "Kadulla",
+        "sound": "q2_street",
+        "image": "answers/street.png"
+      },
+      {
+        "text": "Kirjastossa",
+        "sound": "q2_library",
+        "image": "answers/library.png",
+        "correct": true
+      },
+      {
+        "text": "Pihalla",
+        "sound": "q2_outside",
+        "image": "answers/courtyard.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "text": "Missä puhut hiljaa kännykkään?",
+      "sound": "quietly"
+    },
+    "answers": [
+      {
+        "text": "Huvipuistossa",
+        "sound": "q3_circus",
+        "image": "answers/themepark.png"
+      },
+      {
+        "text": "Metsässä",
+        "sound": "q3_forest",
+        "image": "answers/forest.png"
+      },
+      {
+        "text": "Junassa",
+        "sound": "q3_train",
+        "image": "answers/train.png",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "text": "Miten vastaat kännykkään?",
+      "sound": "answer"
+    },
+    "answers": [
+      {
+        "text": "Väsyneesti",
+        "sound": "q4_tired",
+        "image": "answers/tiredly.png"
+      },
+      {
+        "text": "Vihaisesti",
+        "sound": "q4_angry",
+        "image": "answers/angrily.png"
+      },
+      {
+        "text": "Iloisesti",
+        "sound": "q4_happy",
+        "image": "answers/cheerfully.png",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "text": "Missä laitat kännykän äänettömälle tai värinähälytykselle?",
+      "sound": "silent"
+    },
+    "answers": [
+      {
+        "text": "Elokuvateatterissa",
+        "sound": "q5_movies",
+        "image": "answers/kino.png",
+        "correct": true
+      },
+      {
+        "text": "Leikkipuistossa",
+        "sound": "q5_park",
+        "image": "answers/kindergarten.png"
+      },
+      {
+        "text": "Uimarannalla",
+        "sound": "q5_beach",
+        "image": "answers/beach.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "text": "Missä näistä paikoista suljet kännykän?",
+      "sound": "turnoff"
+    },
+    "answers": [
+      {
+        "text": "Kotona",
+        "sound": "q6_home",
+        "image": "answers/home.png"
+      },
+      {
+        "text": "Lentokoneessa",
+        "sound": "q6_airplane",
+        "image": "answers/plane.png",
+        "correct": true
+      },
+      {
+        "text": "Kadulla",
+        "sound": "q6_street",
+        "image": "answers/street.png"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "text": "Missä voit käyttää kaiutinta?",
+      "sound": "loudspeaker"
+    },
+    "answers": [
+      {
+        "text": "Kirjastossa",
+        "sound": "q7_library",
+        "image": "answers/library.png"
+      },
+      {
+        "text": "Ravintolassa",
+        "sound": "q7_restaurant",
+        "image": "answers/restaurant.png"
+      },
+      {
+        "text": "Pihalla",
+        "sound": "q7_outside",
+        "image": "answers/courtyard.png",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "text": "Missä näistä paikoista suljet kännykän?",
+      "sound": "turnoff2"
+    },
+    "answers": [
+      {
+        "text": "Hississä",
+        "sound": "q8_elevator",
+        "image": "answers/elevator.png"
+      },
+      {
+        "text": "Sairaalassa",
+        "sound": "q8_hospital",
+        "image": "answers/hospital.png",
+        "correct": true
+      },
+      {
+        "text": "Autossa",
+        "sound": "q8_car",
+        "image": "answers/car.png"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "text": "Milloin kännykällä ei saa soittaa eikä siihen vastata?",
+      "sound": "notalk"
+    },
+    "answers": [
+      {
+        "text": "Ruutuhyppelyssä",
+        "sound": "q9_squares",
+        "image": "answers/skippingsquares.png"
+      },
+      {
+        "text": "Luistellessa",
+        "sound": "q9_skating",
+        "image": "answers/skating.png"
+      },
+      {
+        "text": "Pyöräillessä",
+        "sound": "q9_cycling",
+        "image": "answers/bicycling.png",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "text": "Missä laitat kännykän äänettömälle tai värinähälytykselle?",
+      "sound": "silent"
+    },
+    "answers": [
+      {
+        "text": "Puistossa",
+        "sound": "q10_park",
+        "image": "answers/park.png"
+      },
+      {
+        "text": "Hississä",
+        "sound": "q10_elevator",
+        "image": "answers/elevator.png"
+      },
+      {
+        "text": "Kirkossa",
+        "sound": "q10_church",
+        "image": "answers/church.png",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "text": "Milloin kännykällä ei saa soittaa eikä siihen vastata?",
+      "sound": "notalk"
+    },
+    "answers": [
+      {
+        "text": "Onkiessa",
+        "sound": "q12_fishing",
+        "image": "answers/fishing.png"
+      },
+      {
+        "text": "Ratsastaessa",
+        "sound": "q12_riding",
+        "image": "answers/riding.png",
+        "correct": true
+      },
+      {
+        "text": "Haravoidessa",
+        "sound": "q12_raking",
+        "image": "answers/raking.png"
+      }
+    ]
+  }
+]

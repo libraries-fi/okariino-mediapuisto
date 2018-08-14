@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Pomppu-Pupu",
+    "cover": "/sites/default/games/scrambled_movie_plot/images/story0_img0.jpg",
+    "sounds": {
+      "intro": "smp/s1",
+      "error": "smp/s2",
+      "success": "smp/s3"
+    },
+    "scenes": [
+      {
+        "id": 1,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story0_img1.jpg"
+      },
+      {
+        "id": 2,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story0_img2.jpg"
+      },
+      {
+        "id": 3,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story0_img3.jpg"
+      },
+      {
+        "id": 4,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story0_img4.jpg"
+      },
+      {
+        "id": 5,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story0_img5.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Olivia",
+    "cover": "/sites/default/games/scrambled_movie_plot/images/story1_img0.jpg",
+    "sounds": {
+      "intro": "smp/s4",
+      "error": "smp/s5",
+      "success": "smp/s6"
+    },
+    "scenes": [
+      {
+        "id": 1,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story1_img1.jpg"
+      },
+      {
+        "id": 2,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story1_img2.jpg"
+      },
+      {
+        "id": 3,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story1_img3.jpg"
+      },
+      {
+        "id": 4,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story1_img4.jpg"
+      },
+      {
+        "id": 5,
+        "image": "/sites/default/games/scrambled_movie_plot/images/story1_img5.jpg"
+      }
+    ]
+  }
+]

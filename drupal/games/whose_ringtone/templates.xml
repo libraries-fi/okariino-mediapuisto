@@ -1,0 +1,16 @@
+<templates>
+  <template id="wrt-game-view">
+    <![CDATA[
+      <% _(characters).each(function(char, i) { %>
+        <label class="wrt-item phone" id="wrt-phone-<%= i %>">
+          <input type="radio" name="phone" value="<%= phones[i].id %>"/>
+          <img src="<%= img('phone{0}.png'.format(i+1)) %>" alt="phone <%= i %>"/>
+        </label>
+        <label class="wrt-item character" id="wrt-character-<%= i %>">
+          <input type="radio" name="character" value="<%= char.id %>"/>
+          <img src="<%= img(char.get('picture')) %>" alt="char <%= i %>"/>
+        </label>
+      <% }) %>
+    ]]>
+  </template>
+</templates>

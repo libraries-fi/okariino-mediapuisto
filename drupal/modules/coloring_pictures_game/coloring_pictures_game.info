@@ -1,0 +1,12 @@
+name = Digital Coloring Pictures
+description = Black 'n' white templates for kids to fill with colors and then submit to a public gallery.
+package = Okariino Games
+
+core = 7.x
+
+dependencies[] = services
+dependencies[] = file
+
+files[] = coloring_pictures_game.install
+files[] = coloring_pictures_game.inc
+files[] = coloring_pictures_game.module

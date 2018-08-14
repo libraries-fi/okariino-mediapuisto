@@ -1,0 +1,148 @@
+
+.transition(@arguments) {
+  -moz-transition: @arguments;
+  -webkit-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments,
+}
+
+#psp-board {
+  background: url("/sites/default/games/picture_sound_pair/images/arrow.png") no-repeat scroll left 350px #E0C6E4;
+
+  #psp-game-view {
+    a {
+      cursor: pointer;
+    }
+
+    .jingle {
+      position: absolute;
+      left: 0;
+      top: 300px;
+    }
+
+    #psp-picture-frame {
+      width: 660px;
+      height: 200px;
+      margin: 30px 0 0 300px;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    #psp-puzzles {
+      margin: 20px 40px 0;
+      padding: 20px 20px;
+      list-style-type: none;
+      text-align: center;
+      border-bottom: 1px solid #aaa;
+
+      li {
+        display: inline;
+
+        &.active {
+          img {
+            height: 220px;
+            opacity: 1;
+          }
+        }
+
+        img {
+          height: 80px;
+          opacity: 0.2;
+        }
+      }
+    }
+
+    #psp-notes {
+      list-style-type: none;
+      margin-top: 20px;
+      margin-left: 80px;
+
+      li {
+        width: 75px;
+//         position: absolute;
+        display: inline-block;
+        margin-left: 5px;
+        text-align: center;
+        .transition(~"opacity 0.3s");
+
+        &.correct {
+          label {
+            background-color: rgba(100, 255, 100, 0.8);
+            box-shadow: 0 0 5px green;
+
+            .psp-radio > .radio-inner {
+              background-color: #0a0;
+            }
+          }
+        }
+
+        &.disabled {
+          opacity: 0.2;
+
+          .psp-radio > .radio-inner {
+            background-color: #000;
+          }
+        }
+      }
+
+      .note {
+        padding: 10px;
+        display: inline-block;
+        background: rgba(255, 200, 255, 0.5);
+        border-radius: 10px;
+
+        .psp-radio {
+          width: 15px;
+          height: 15px;
+          display: block;
+          border: 3px solid #000;
+          border-radius: 15px;
+          margin: 5px auto;
+
+          .radio-inner {
+            width: 11px;
+            height: 11px;
+            display: block;
+            border: 2px solid #fff;
+            border-radius: inherit;
+            background-color: #fff;
+          }
+        }
+
+        input {
+          display: none;
+        }
+      }
+
+      .play {
+        width: 40px;
+        height: 40px;
+        background: url('images/btn-play.png') no-repeat;
+        border-width: 0;
+        margin-top: 5px;
+        display: inline-block;
+        border-radius: 20px;
+
+        &:active, &.active {
+          box-shadow: inset 0 5px 15px black;
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    #psp-validate {
+      font-size: 100px;
+      line-height: 100px;
+      text-decoration: none;
+      position: absolute;
+      top: 150px;
+      right: 50px;
+    }
+  }
+}

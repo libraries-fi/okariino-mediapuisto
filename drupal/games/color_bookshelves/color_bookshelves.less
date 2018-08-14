@@ -1,0 +1,98 @@
+.perspective(@p, @x, @y) {
+  -moz-transform: perspective(@p) rotateX(@x) rotateY(@y);
+  -webkit-transform: perspective(@p) rotateX(@x) rotateY(@y);
+  transform: perspective(@p) rotateX(@x) rotateY(@y);
+}
+
+#cb-board {
+  background: #8dd0d0 url('images/room.jpg') left top no-repeat;
+
+  li {
+    list-style-type: none;
+  }
+
+  #cbs-shelf-frame {
+    position: relative;
+    z-index: 100;
+
+    #cbs-bookshelf {
+      width: 800px;
+      margin-top: 100px;
+      margin-left: -180px;
+      border: 2px solid red;
+
+      .perspective(1200px, 1deg, -55deg);
+
+      li.cbs-shelf {
+//         width: 240px;
+        height: 60px;
+        border: 2px solid red;
+        margin-bottom: 5px;
+
+        &.red {
+          background-color: rgba(255, 0, 0, 0.4);
+        }
+
+        &.green {
+          background-color: rgba(0, 255, 0, 0.4);
+        }
+
+        &.blue {
+          background-color: rgba(0, 0, 255, 0.4);
+        }
+
+        &.yellow {
+          background-color: rgba(255, 255, 0, 0.4);
+        }
+      }
+    }
+  }
+
+  #cbs-books-frame {
+    width: 612px;
+    height: 117px;
+    position: absolute;
+    bottom: 0;
+    left: 94px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+//     border: 1px solid red;
+    background: url('images/books-region.png') 30px 30px no-repeat;
+
+
+    #cbs-cat {
+      width: 60px;
+      height: 35px;
+      background: purple;
+      position: absolute;
+      bottom: 70px;
+      right: 200px;
+    }
+
+    .cbs-book {
+      width: 60px;
+      height: 80px;
+      position: absolute;
+
+      &.red {
+        background-color: rgba(255, 0, 0, 0.4);
+      }
+
+      &.green {
+        background-color: rgba(255, 0, 0, 0.4);
+      }
+
+      &.blue {
+        background-color: rgba(255, 0, 0, 0.4);
+      }
+
+      &.yellow {
+        background-color: rgba(255, 0, 0, 0.4);
+      }
+
+      left: 200px;
+    }
+  }
+}

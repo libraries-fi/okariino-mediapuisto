@@ -1,0 +1,252 @@
+@images: '/sites/default/themes/okariino/images';
+
+#bc-board {
+  background: #bfdde8 !important;
+  border-radius: 7px !important;
+
+  #bc-carousel {
+    background: #bfdde8 url('images/carousel.jpg') 100px top no-repeat;
+    position: absolute;
+
+    .jingle {
+      position: absolute;
+      left: 469px;
+      top: 0;
+    }
+
+    #bc-toggle-slider {
+      width: 91px;
+      height: 62px;
+      margin-top: -5px;
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      background-image: url('images/nappi.png');
+
+      &:hover {
+        background-image: url('images/nappi-hover.png');
+      }
+
+      &:active {
+        background-image: url('images/nappi-push.png');
+      }
+    }
+
+    #bc-launch-archive {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      background: url("@{images}/btn-h80.png") 100px 0;
+      position: absolute;
+      top: 65px;
+      right: 65px;
+    }
+
+    #bc-slider {
+      position: absolute;
+      bottom: 30px;
+      margin: 0 0 10px 100px;
+
+      img {
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 150px;
+        border: 1px solid #777;
+      }
+
+      .carousel-inner {
+        margin-bottom: 0;
+      }
+
+      li {
+        a {
+          width: 188px;
+        }
+      }
+
+      div {
+        background-image: url('images/carousel-icons.png');
+        background-repeat: no-repeat;
+        padding-bottom: 95px;
+        float: left;
+        width: 188px;
+        text-align: center;
+      }
+
+      .elephant {
+        background-position: 0px bottom;
+      }
+
+      .pig {
+        background-position: -200px bottom;
+      }
+
+      .bee {
+        background-position: -400px bottom;
+      }
+
+      .lion {
+        background-position: -600px bottom;
+      }
+
+      .octopussy {
+        background-position: -800px bottom;
+      }
+
+      .pig-2 {
+        background-position: -1000px bottom;
+      }
+
+      .bunny {
+        background-position: -1200px bottom;
+      }
+
+      .beaver {
+        background-position: -1400px bottom;
+      }
+
+      .elephant-2 {
+        background-position: -1600px bottom;
+      }
+
+      .chick {
+        background-position: -1800px bottom;
+      }
+
+      .rat {
+        background-position: -2000px bottom;
+      }
+
+      .seal {
+        background-position: -2200px bottom;
+      }
+    }
+  }
+}
+
+#bc-book-view {
+  background: #bfdde8;
+  color: #000;
+
+  img {
+    box-shadow: 10px 10px 20px #777;
+  }
+
+  #bc-book-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 57px;
+  }
+
+  #bc-book-picture-pane {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 250px;
+  }
+
+  #bc-book-content-pane {
+    position: absolute;
+    top: 0;
+    bottom: 85px;
+    left: 250px;
+    right: 0;
+  }
+
+  #bc-book-cover {
+    width: 180px;
+    height: 340px;
+    margin-top: 65px;
+    margin-left: 35px;
+    float: left;
+  }
+
+  #bc-book-info {
+    margin-right: 40px;
+    font-family: georgia, verdana, serif;
+  }
+
+  #bc-lorem-ipsum {
+    margin-left: 25px;
+    margin-right: 50px;
+  }
+
+  #bc-media {
+    padding: 0;
+    margin: 40px 0 0 20px;
+    clear: both;
+    list-style: none;
+
+    li {
+      margin-right: 10px;
+      display: inline-block;
+
+      a {
+        text-indent: -9999px;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        background-image: url('images/book-carousel-btn-h60.png');
+        background-repeat: no-repeat;
+      }
+    }
+
+    .Audio {
+      background-position: -75px center;
+    }
+    .Author {
+      background-position: -300px center;
+    }
+    .Game {
+      background-position: -150px center;
+    }
+    .Text {
+      background-position: -225px center;
+    }
+    .Video {
+      background-position: 0 center;
+    }
+  }
+}
+
+#bc-archive-view {
+  background-color: #B0D8D8;
+
+  #bc-archive-pager {
+    margin-top: 30px;
+
+    a {
+      border-radius: 20px 20px 20px 20px;
+      padding: 10px 15px;
+      color: black;
+      font-size: 1em;
+      font-weight: 700;
+
+      &:hover {
+        background-color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  #bc-archive-slider {
+    margin-top: 20px;
+
+    a {
+
+      &:hover {
+        box-shadow: 2px 2px 5px #777;
+      }
+    }
+  }
+}
+
+#bc-media-view {
+  background: #bfdde8;
+  text-align: center;
+
+  iframe {
+    margin-top: 40px;
+  }
+}

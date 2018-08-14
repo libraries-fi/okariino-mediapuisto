@@ -1,0 +1,262 @@
+
+.transition(@arguments) {
+  -moz-transition: @arguments;
+  -webkit-transition: @arguments;
+  transition: @arguments;
+}
+
+body {
+  background: url('/sites/default/themes/okariino/images/bg-pattern.jpg') repeat left top #b4e059;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+  	text-decoration: none;
+  }
+
+  img {
+    border-width: 0;
+  }
+}
+
+button, a img {
+  outline: none;
+}
+
+body.game-mode {
+  #action-screens {
+    a.carousel-control {
+      opacity: 0 !important;
+    }
+
+    ul.carousel-inner {
+      opacity: 0 !important;
+    }
+  }
+}
+
+#ie-warning {
+  display: none;
+}
+
+#l-wrap {
+  width: 901px;
+  position: relative;
+  margin: 0 auto;
+  vertical-align: middle;
+
+  #logo {
+    margin-left: 45px;
+    position: relative;
+    z-index: 990;
+  }
+
+  #viewport {
+    width: 895px;
+    height: 483px;
+    border: 3px solid black;
+    position: relative;
+    box-shadow: 0 0 40px 2px #555;
+    border-radius: 10px;
+
+    #pager {
+      display: none;
+      background-color: white;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 999;
+
+      ul {
+        padding: 5px;
+        margin: 0;
+      }
+
+      li {
+        display: inline;
+        word-spacing: 0;
+      }
+
+      #pager-grain {
+        width: 80px;
+        height: 43px;
+        border: 8px solid #000;
+        position: absolute;
+        margin-left: -8px;
+        top: -3px;
+        left: 89px;
+      }
+    }
+
+    #action-screens {
+      width: 895px;
+      height: 483px;
+      background-color: black;
+      margin: 0;
+      display: block;
+
+      ul.carousel-inner {
+        .transition(~"opacity 0.5s");
+      }
+
+      ul.carousel-inner,
+      li.item {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      a.carousel-control {
+        height: 48px;
+        margin-top: 0;
+/*         top: 220px; */
+        top: 200px;
+        background: transparent url('../images/arrows.png');
+        border-width: 5px 0;
+        border-radius: 0;
+        border-color: #000;
+        opacity: 0.9;
+
+        // Added 2013-01-13 to alter style
+        width: 37px;
+        background-color: #000;
+        z-index: 999;
+
+        .transition(~"opacity 0.5s");
+
+        &:hover {
+          background-image: url('../images/arrows-hover.png');
+        }
+
+        &.disabled {
+          opacity: 0.2;
+        }
+
+        &.left {
+/*           left: -38px; */
+          left: -3px;
+          border-radius: 0 15px 15px 0;
+          border-right: 5px solid black;
+          background-position: -3px;
+        }
+
+        &.right {
+          background-position: -36px 0;
+/*           right: -38px; */
+          right: -3px;
+          border-radius: 15px 0 0 15px;
+          border-left: 5px solid black;
+        }
+
+        span {
+          display: none;
+        }
+      }
+
+      li {
+        background: black left top no-repeat;
+        border-radius: 7px;
+      }
+
+      #screen-1 {
+        background-image: url('../images/bg-2.jpg');
+      }
+
+      #screen-2 {
+        background-image: url('../images/bg-1.jpg');
+      }
+
+      #screen-3 {
+        background-image: url('../images/bg-3.jpg');
+      }
+    }
+  }
+
+  #section-identifier {
+    // Hide this element for now
+    display: none;
+
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    border-radius: 0 0 10px 0;
+  }
+
+  #toolbar {
+    position: relative;
+    z-index: 100;
+
+    ul {
+      margin: 0 30px;
+    }
+
+    li {
+      list-style-type: none;
+      margin-right: 3px;
+      display: inline;
+    }
+
+    a {
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.checked {
+        .state-off {
+          display: none;
+        }
+
+        .state-on {
+          display: inline;
+        }
+      }
+
+      .state-on {
+        display: none;
+      }
+    }
+  }
+}
+
+#bc-carousel {
+  anythingSlider-default {
+    position: absolute !important;
+    bottom: 10px !important;
+  }
+}
+
+#addthisshare {
+  a {
+    float: right;
+  }
+  div.atclear {
+    clear: none;
+    display: none;
+  }
+}
+
+#toolbar-aparaattisaari {
+  float: right;
+  margin-left: 5px;
+}
+
+
+// @import 'anything_slider_fix.css.less';
+@import 'characters.less';
+@import 'games.less';

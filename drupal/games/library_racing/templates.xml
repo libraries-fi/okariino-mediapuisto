@@ -1,0 +1,15 @@
+
+<templates>
+  <template id="lbr-tracks-view">
+    <![CDATA[
+      <ul>
+        <% _(tracks).each(function(t, i) { %>
+          <li>
+            <a href="<%= track(i) %>">
+              <img src="<%= t.thumbnail %>" alt="track <%= i %>"/>
+            </a>
+        <% }) %>
+      </ul>
+    ]]>
+  </template>
+</templates>

@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* Okariino.fi CSS by Harri Oksanen / Kirjastot.fi */
+body {
+  background-color:#f9f9f7;
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+img {
+  border:none;
+}
+#page {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  background-image: url(../images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #f9f9f7;
+}
+#page .center {
+  /* position: absolute; */
+  display: table-cell;
+  /* top: 50%; */
+  vertical-align: middle;
+  text-align: center;
+}
+.center .content {
+  /* position: relative; */
+  /* top: -50%; */
+  text-align: center;
+  display: inline-block;
+  heigth:551px;
+  width:971px;
+}
+.navi-left {
+  padding-top:249px;
+  float:left;
+  width:38px;
+  display:none;
+}
+.navi-right {
+  padding-top:249px;
+  float:left;
+  width:38px;
+  display:none;
+}
+#main-content {
+  margin-top:34px;
+  float:left;
+  width:971px; /*was:895px;*/
+  height:483px;
+  position: relative;
+}
+.extras-link-aikuisille {
+  float:left;
+  clear:both;
+  text-align:left;
+  height:34px;
+  margin-left:70px;
+}
+.extras-link {
+  float:left;
+  text-align:left;
+  height:34px;
+  margin-left:5px;
+}
+/* ensimmäisen ruudun elementit */
+.r1-bg {margin-left:0px;margin-top:0px;position:absolute;}
+#character-kuumailmapallo {margin-left:515px;margin-top:0px;position:absolute;}
+#character-kissa {margin-left:155px;margin-top:308px;position:absolute;}
+#character-penkki {margin-left:221px;margin-top:324px;position:absolute;}
+#character-olivia {margin-left:340px;margin-top:230px;position:absolute;}
+#character-kukat {margin-left:297px;margin-top:334px;position:absolute;}
+#character-taiteilija {margin-left:0px;margin-top:288px;position:absolute;}
+#character-tuubi-4 {margin-left:105px;margin-top:400px;position:absolute;}
+#character-teos {margin-left:85px;margin-top:395px;position:absolute;}
+#character-tuubi-1 {margin-left:45px;margin-top:450px;position:absolute;}
+#character-tuubi-2 {margin-left:125px;margin-top:380px;position:absolute;}
+#character-tuubi-3 {margin-left:2px;margin-top:417px;position:absolute;}
+#character-karuselli {margin-left:578px;margin-top:90px;position:absolute;}
+#character-laululintu-2 {margin-left:50px;margin-top:260px;position:absolute;}
+#character-laululintu-3 {margin-left:453px;margin-top:110px;position:absolute;}
+#character-laululintu-1 {margin-left:720px;margin-top:67px;position:absolute;}
+#character-viltti {margin-left:592px;margin-top:375px;position:absolute;}
+#character-kruunu {margin-left:690px;margin-top:348px;position:absolute;}
+#character-kitara {margin-left:620px;margin-top:388px;position:absolute;}
+#character-peliohjain {margin-left:700px;margin-top:410px;position:absolute;}
+.r1-olli {margin-left:742px;margin-top:280px;position:absolute;}
+/* toisen ruudun elementit */
+.r2-bg {margin-left:0px;margin-top:0px;position:absolute;}
+/* kolmannen ruudun elementit */
+.r3-bg {margin-left:0px;margin-top:0px;position:absolute;}
+/* slider */
+#slider1 {margin:0;list-style-type:none;}
+.anythingSlider-default.activeSlider .anythingWindow {border:none;}
+.anythingControls {display:none !important}
+
+
+.anythingSlider-default .arrow a {
+  background-image: url('../images/arrows.png') !important;
+}
+#main-content {
+  position: relative;
+}
+#character-guide {
+  position: absolute;
+  right: 35px;
+  bottom: -6px;
+  z-index: 1000;
+}
+.r1-olli {
+  display: none;
+}
+#addthisshare a {
+  float: right;
+}
+#addthisshare div.atclear {
+  clear: none;
+  display: none;
+}
+#toolbar-aparaattisaari {
+  float: right;
+  margin-left: 5px;
+}

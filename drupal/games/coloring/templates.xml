@@ -1,0 +1,70 @@
+<templates>
+  <template id="selectpicture">
+    <![CDATA[
+      <ul id="dcp-pictures-pager" class="thumbNav">
+        <% _.each(_.range(Math.ceil(pictures.length / page_size)), function(i) { %>
+          <li>
+            <a><%= i+1 %></a>
+          </li>
+        <% }) %>
+      </ul>
+      <ul id="dcp-pictures" class="carousel-inner">
+        <li class="item active">
+          <% _.each(pictures, function(pic, i) { %>
+            <% if (i && i % page_size == 0) { %>
+              </li>
+              <li class="item">
+            <% } %>
+            <a data-id="<%= pic.get('id') %>">
+              <img src="<%= pic.get('src') %>" alt="<%= pic.get('id') %>"/>
+            </a>
+          <% }) %>
+        </li>
+      </ul>
+    ]]>
+  </template>
+  <template id="colorpicker">
+    <![CDATA[
+      <ul>
+        <% _.each(colors, function(color) { %>
+          <li style="background-color: <%= color %>"></li>
+        <% }) %>
+      </ul>
+      <div id="dcp-current-color"></div>
+    ]]>
+  </template>
+  <template id="paintview">
+    <![CDATA[
+      <div id="dcp-actions">
+        <a id="dcp-print"><span>Print</span></a>
+        <a id="dcp-send"><span>Send picture</span></a>
+      </div>
+    ]]>
+  </template>
+  <template id="paintarea">
+    <![CDATA[
+
+    ]]>
+  </template>
+  <template id="submitdialog">
+    <![CDATA[
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+        <h3><%= tr('Lähetä kuva') %></h3>
+      </div>
+      <div class="modal-body">
+        <div class="form-field">
+          <label><%= tr('Nimesi') %></label>
+          <input type="text" name="name" value="<%= name %>"/>
+        </div>
+        <div>
+          <label><%= tr('Ikäsi') %></label>
+          <input type="text" name="age" value="<%= age %>"/>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary"><%= tr('Lähetä') %></button>
+      </div>
+    ]]>
+  </template>
+</templates>

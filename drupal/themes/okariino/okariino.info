@@ -1,0 +1,46 @@
+
+name = Okariino Game
+description = Theme for the Okariino children's website
+
+core = 7.x
+engine = phptemplate
+
+regions[header]         = Header
+regions[footer]         = Footer
+regions[content]        = Content
+regions[sidebar_first]  = N/a
+regions[sidebar_second] = N/a
+regions[highlighted]    = N/a
+
+features[] = main_menu
+
+; scripts[] = lib/jquery_ui/1.10/js/jquery-ui-1.10.2.custom.min.js
+scripts[] = lib/underscore/1.4/underscore-min.js
+scripts[] = lib/backbone/1.0/backbone-min.js
+scripts[] = lib/backbone_layoutmanager/0.8/backbone.layoutmanager.js
+scripts[] = lib/soundjs/0.5/soundjs-min.js
+scripts[] = lib/lesscss/less-1.4.1.min.js
+scripts[] = lib/raphael/raphael-min.js
+scripts[] = lib/raphael_export/raphael.export.js
+scripts[] = lib/raphael_svg_importer/raphael_svg_importer.js
+scripts[] = lib/jquery_print_element/jquery.printElement.min.js
+scripts[] = lib/kineticjs/4.7/kinetic-min.js
+; scripts[] = lib/preloadjs/0.3/preloadjs-0.3.1.min.js
+scripts[] = lib/preloadjs/0.4/preloadjs-0.4.1.min.js
+scripts[] = lib/hammerjs/1.0/jquery.hammer.min.js
+scripts[] = lib/jquery_cookie/1.4/jquery.cookie.js
+
+stylesheets[all][] = lib/bootstrap/css/bootstrap.min.css
+scripts[] = lib/bootstrap/js/bootstrap.min.js
+
+stylesheets[all][] = less/base.ess
+stylesheets[all][] = less/style.less
+stylesheets[all][] = less/mobile.less
+stylesheets[all][] = less/splash.less
+
+scripts[] = js/stdlib.js
+scripts[] = js/jquery_plugins.js
+
+scripts[] = js/okariino.js
+scripts[] = js/init_action_screens.js
+scripts[] = js/init_characters.js

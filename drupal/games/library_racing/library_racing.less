@@ -1,0 +1,44 @@
+
+#lbr-racing-view {
+  background-color: #9bbe3d;
+
+  #lbr-start {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background: url("/sites/default/games/library_racing/images/sprites.png") repeat scroll right top transparent;
+    border-radius: 70px;
+    box-shadow: 0 0 30px #333;
+    position: absolute;
+    top: 170px;
+    left: 380px;
+
+    &:active {
+      background-color: #080;
+    }
+  }
+
+  #lbr-fps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0;
+    font-size: 24px;
+    width: 2ex;
+
+    display: none;
+  }
+}
+
+#lbr-tracks-view {
+  ul {
+    width: 600px;
+    margin: 120px auto 0;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      display: inline;
+    }
+  }
+}

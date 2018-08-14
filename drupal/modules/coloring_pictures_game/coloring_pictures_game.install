@@ -1,0 +1,116 @@
+<?php
+
+function coloring_pictures_game_install() {
+    node_types_rebuild();
+    $types = node_type_get_types();
+
+    // Create fields for dcp_template
+
+    field_create_field(array(
+      'field_name' => 'dcp_field_template',
+      'type' => 'file',
+    ));
+
+    field_create_instance(array(
+        'field_name' => 'dcp_field_template',
+        'entity_type' => 'node',
+        'bundle' => 'dcp_template',
+        'label' => t('Picture'),
+        'settings' => array(
+            'file_extensions' => 'svg',
+            'max_filesize' => '1024 KB',
+            'file_directory' => '',
+        ),
+        'widget' => array(
+            'type' => 'file_generic',
+            'module' => 'file',
+            'settings' => array(
+                'progress_indicator' => 'throbber',
+            ),
+        ),
+        'display' => array(
+            'default' => array(
+                'label' => 'above',
+                'type' => 'file_default',
+                'module' => 'file',
+            ),
+        ),
+//         'description' => 'The file field',
+    ));
+
+    // Create fields for dcp_picture
+
+    // User's name
+    field_create_field(array(
+        'field_name' => 'dcp_picture_user',
+        'type' => 'text',
+    ));
+
+    field_create_instance(array(
+        'field_name' => 'dcp_picture_user',
+        'entity_type' => 'node',
+        'bundle' => 'dcp_picture',
+        'label' => t('Name'),
+    ));
+
+    // User's age
+    field_create_field(array(
+        'field_name' => 'dcp_picture_age',
+        'type' => 'text',
+    ));
+
+    field_create_instance(array(
+        'field_name' => 'dcp_picture_age',
+        'entity_type' => 'node',
+        'bundle' => 'dcp_picture',
+        'label' => t('Age'),
+    ));
+
+    // Picture file
+    field_create_field(array(
+        'field_name' => 'dcp_picture_file',
+        'type' => 'file',
+    ));
+
+    field_create_instance(array(
+        'field_name' => 'dcp_picture_file',
+        'entity_type' => 'node',
+        'bundle' => 'dcp_picture',
+        'label' => t('Picture'),
+        'settings' => array(
+            'file_extensions' => 'svg',
+            'max_filesize' => '1024 KB',
+            'file_directory' => '',
+        ),
+        'widget' => array(
+            'type' => 'file_generic',
+            'module' => 'file',
+            'settings' => array(
+                'progress_indicator' => 'throbber',
+            ),
+        ),
+        'display' => array(
+            'default' => array(
+                'label' => 'above',
+                'type' => 'file_default',
+                'module' => 'file',
+            ),
+        ),
+    ));
+}
+
+function coloring_pictures_game_uninstall() {
+    $nids = db_query('SELECT nid FROM {node} n WHERE n.type IN (:t1, :t2)', array(
+        ':t1' => 'dcp_template',
+        ':t2' => 'dcp_picture'
+    ))->fetchCol();
+
+    node_delete_multiple($nids);
+
+    array_map('field_delete_instance', field_info_instances('node', 'dcp_template'));
+    array_map('field_delete_instance', field_info_instances('node', 'dcp_picture'));
+
+    node_type_delete('dcp_template');
+    node_type_delete('dcp_picture');
+    field_purge_batch(1000);
+}

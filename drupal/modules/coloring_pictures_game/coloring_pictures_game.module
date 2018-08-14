@@ -1,0 +1,274 @@
+<?php
+// coloring_pictures_game.module
+
+function coloring_pictures_game_node_info() {
+    // Announces module's content types.
+    
+    return array(
+        'dcp_template' => array(
+            'name' => t('DCP Template Picture'),
+            'description' => t('Picture template for Digital Coloring Pictures games'),
+            'title_label' => t('Picture name'),
+//             'help' => 'foobar',
+            'type' => 'dcp_template',
+            'base' => 'node_content',
+            'has_title' => true,
+        ),
+        'dcp_picture' => array(
+            'name' => t('DCP Submitted Drawing'),
+            'description' => t('Picture submitted from Digital Coloring Pictures game'),
+            'title_label' => t('Picture name'),
+//             'help' => 'foobar',
+            'type' => 'dcp_picture',
+            'base' => 'node_content',
+            'has_title' => true,
+        ),
+    );
+}
+
+// function coloring_pictures_game_form($node, $form_state) {
+//     return node_content_form($node, $form_state);
+// }
+
+/**
+* Implementation of hook_services_resources().
+*/
+function coloring_pictures_game_services_resources() {
+  return array(
+    'dcp_template' => array(
+      'index' => array(
+        'help' => 'Retrieves a listing of template pictures',
+        'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+        'callback' => '_dcp_template_index',
+        'access callback' => 'user_access',
+        'access arguments' => array('access content'),
+        'access arguments append' => FALSE,
+        'args' => array(
+          array(
+            'name' => 'page',
+            'type' => 'int',
+            'description' => '',
+            'source' => array(
+              'param' => 'page',
+            ),
+            'optional' => TRUE,
+            'default value' => 0,
+          ),
+          array(
+           'name' => 'parameters',
+           'type' => 'array',
+           'description' => '',
+           'source' => 'param',
+           'optional' => TRUE,
+           'default value' => array(),
+          ),
+        ),
+      ),
+      'retrieve' => array(
+        'help' => 'Retrieves a template picture',
+        'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+        'callback' => '_dcp_template_retrieve',
+        'access callback' => '_dcp_template_access',
+        'access arguments' => array('view'),
+        'access arguments append' => TRUE,
+        'args' => array(
+          array(
+            'name' => 'id',
+            'type' => 'int',
+            'description' => 'The id of the template picture to get',
+            'source' => array('path' => '0'),
+            'optional' => FALSE,
+          ),
+        ),
+      ),
+//       'create' => array(
+//         'help' => 'Creates a template picture',
+//         'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+//         'callback' => '_coloring_pictures_game_create',
+//         'access arguments' => array('note resource create'),
+//         'access arguments append' => FALSE,
+//         'args' => array(
+//           array(
+//             'name' => 'data',
+//             'type' => 'struct',
+//             'description' => 'The template picture object',
+//             'source' => 'data',
+//             'optional' => FALSE,
+//           ),
+//         ),
+//       ),
+//       'update' => array(
+//         'help' => 'Updates a template picture',
+//         'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+//         'callback' => '_coloring_pictures_game_update',
+//         'access callback' => '_coloring_pictures_game_access',
+//         'access arguments' => array('update'),
+//         'access arguments append' => TRUE,
+//         'args' => array(
+//           array(
+//             'name' => 'id',
+//             'type' => 'int',
+//             'description' => 'The id of the node to update',
+//             'source' => array('path' => '0'),
+//             'optional' => FALSE,
+//           ),
+//           array(
+//             'name' => 'data',
+//             'type' => 'struct',
+//             'description' => 'The template picture data object',
+//             'source' => 'data',
+//             'optional' => FALSE,
+//           ),
+//         ),
+//       ),
+//       'delete' => array(
+//         'help' => 'Deletes a template picture',
+//         'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+//         'callback' => '_coloring_pictures_game_delete',
+//         'access callback' => '_coloring_pictures_game_access',
+//         'access arguments' => array('delete'),
+//         'access arguments append' => TRUE,
+//         'args' => array(
+//           array(
+//             'name' => 'nid',
+//             'type' => 'int',
+//             'description' => 'The id of the template picture to delete',
+//             'source' => array('path' => '0'),
+//             'optional' => FALSE,
+//           ),
+//         ),
+//       ),
+    ),
+    'dcp_picture' => array(
+      'index' => array(
+        'help' => 'Retrieves a listing of user-submitted pictures',
+        'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+        'callback' => '_dcp_picture_index',
+        'access callback' => 'user_access',
+        'access arguments' => array('access content'),
+        'access arguments append' => FALSE,
+        'args' => array(
+          array(
+            'name' => 'page',
+            'type' => 'int',
+            'description' => '',
+            'source' => array(
+              'param' => 'page',
+            ),
+            'optional' => TRUE,
+            'default value' => 0,
+          ),
+          array(
+           'name' => 'parameters',
+           'type' => 'array',
+           'description' => '',
+           'source' => 'param',
+           'optional' => TRUE,
+           'default value' => array(),
+          ),
+        ),
+      ),
+      'retrieve' => array(
+        'help' => 'Retrieves a template picture',
+        'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+        'callback' => '_dcp_picture_retrieve',
+        'access callback' => '_dcp_picture_access',
+        'args' => array(
+          array(
+            'name' => 'id',
+            'type' => 'int',
+            'description' => 'The id of the template picture to get',
+            'source' => array('path' => '0'),
+            'optional' => FALSE,
+          ),
+        ),
+      ),
+      'create' => array(
+        'help' => 'Creates a template picture',
+        'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+        'callback' => '_dcp_picture_create',
+        'access callback' => '_dcp_picture_access',
+        'args' => array(
+          array(
+            'name' => 'data',
+            'type' => 'struct',
+            'description' => 'The template picture object',
+            'source' => 'data',
+            'optional' => FALSE,
+          ),
+        ),
+      ),
+//       'update' => array(
+//         'help' => 'Updates a template picture',
+//         'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+//         'callback' => '_coloring_pictures_game_update',
+//         'access callback' => '_coloring_pictures_game_access',
+//         'access arguments' => array('update'),
+//         'access arguments append' => TRUE,
+//         'args' => array(
+//           array(
+//             'name' => 'id',
+//             'type' => 'int',
+//             'description' => 'The id of the node to update',
+//             'source' => array('path' => '0'),
+//             'optional' => FALSE,
+//           ),
+//           array(
+//             'name' => 'data',
+//             'type' => 'struct',
+//             'description' => 'The template picture data object',
+//             'source' => 'data',
+//             'optional' => FALSE,
+//           ),
+//         ),
+//       ),
+//       'delete' => array(
+//         'help' => 'Deletes a template picture',
+//         'file' => array('file' => 'inc', 'module' => 'coloring_pictures_game'),
+//         'callback' => '_coloring_pictures_game_delete',
+//         'access callback' => '_coloring_pictures_game_access',
+//         'access arguments' => array('delete'),
+//         'access arguments append' => TRUE,
+//         'args' => array(
+//           array(
+//             'name' => 'nid',
+//             'type' => 'int',
+//             'description' => 'The id of the template picture to delete',
+//             'source' => array('path' => '0'),
+//             'optional' => FALSE,
+//           ),
+//         ),
+//       ),
+    ),
+  );
+}
+
+/** Gets a note object by id.
+*
+* @param int $id
+* @return object
+*/
+function coloring_pictures_game_get_note($id) {
+  return db_query('SELECT * FROM {dcp_templates} WHERE id=:id', array(':id' => $id))
+           ->fetchAll();
+}
+
+/** Writes a note to the database
+*
+* @param object $note
+* @return void
+*/
+function coloring_pictures_game_write_note($note) {
+  $primary_key = !empty($note->id) ? array('id') : NULL;
+  drupal_write_record('dcp_templates', $note, $primary_key);
+}
+
+/**
+* Deletes a note from the database.
+*
+* @param int $id
+* @return void
+*/
+function coloring_pictures_game_delete_note($id) {
+  db_query('DELETE FROM {dcp_templates} WHERE id=:id', array(':id' => $id));
+}

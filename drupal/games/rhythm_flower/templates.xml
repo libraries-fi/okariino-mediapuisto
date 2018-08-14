@@ -1,0 +1,30 @@
+<templates>
+  <template id="loading-screen">
+    <![CDATA[
+      <div id="rf-loading">
+        <div id="rf-loading-progress" class="progress">
+          <div class="bar"></div>
+        </div>
+        <p id="rf-loading-status">Loading...</p>
+      </div>
+    ]]>
+  </template>
+  <template id="rf-game-view">
+    <![CDATA[
+      <ul id="rf-channels">
+        <% tracks.each(function(model, i) { %>
+          <li id="rf-channel-<%= i+1 %>">
+            <a class="sound" data-track="<%= model.id %>">
+              <img src="/sites/default/games/rhythm_flower/images/petals.png" alt="flower"/>
+            </a>
+          </li>
+        <% }) %>
+      </ul>
+      <div id="rf-player-controls">
+        <label id="rf-toggle-play">
+          <input type="checkbox" name="toggle-play"/>
+        </label>
+      </div>
+    ]]>
+  </template>
+</templates>

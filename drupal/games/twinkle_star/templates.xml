@@ -1,0 +1,30 @@
+<templates>
+  <template id="loading-screen">
+    <![CDATA[
+      <div id="ts-loading">
+        <div id="ts-loading-progress" class="progress">
+          <div class="bar"></div>
+        </div>
+        <p id="ts-loading-status">Loading...</p>
+      </div>
+    ]]>
+  </template>
+  <template id="ts-game-view">
+    <![CDATA[
+      <ul id="ts-stars">
+        <% tracks.each(function(model, i) { %>
+          <li id="ts-star-<%= i+1 %>">
+            <a class="sound" data-track="<%= model.id %>">
+              <img src="/sites/default/games/twinkle_star/images/star.png" alt="star <%= i %>"/>
+            </a>
+          </li>
+        <% }) %>
+      </ul>
+      <div id="ts-player-controls">
+        <label id="ts-toggle-play">
+          <input type="checkbox" name="toggle-play"/>
+        </label>
+      </div>
+    ]]>
+  </template>
+</templates>

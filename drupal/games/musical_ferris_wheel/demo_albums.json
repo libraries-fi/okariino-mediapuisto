@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Perinteiset lastenlaulut",
+        "cover": "/sites/default/games/musical_ferris_wheel/covers/levy1.jpg",
+        "description": "Tältä levyltä löytyvät kaikille tutut suosikit! Levyllä lennätetään leppäkerttua, marssitaan elefanttimarssia, nukutaan sinistä unta ja katsellaan oravan pesää. Hepokatti on maantiellä poikittain, pienet sammakot hyppelevät, hämä-hämä-häkki kutoo verkkojaan ja pieni nokikolari nuohoaa piippuja. ",
+        "source": []
+    },
+    {
+        "id": 2,
+        "title": "Ella & Aleksi: Takapihan tavikset",
+        "cover": "/sites/default/games/musical_ferris_wheel/covers/levy2.jpg",
+        "description": "Takapihan taviksissa tutustutaan mm. Metromatoon, City-kaniin ja tietysti myös niihin Takapihan taviksiin. Levyllä mukana myös erilaisia lintuja: Varis Hilton, Naakat ja Satakieli. ",
+        "source": []
+    },
+    {
+        "id": 3,
+        "title": "Wanhanajan lastenlauluja: Nukku-Matin suosikkilaulut",
+        "cover": "/sites/default/games/musical_ferris_wheel/covers/levy3.jpg",
+        "description": "Nukku-Matin suosikkilaulut tuudittavat lapsukaiset unten maille! Levyllä on mukana 12 tuttua unilaulua, mm. Sininen uni, Uinu lapsein ja Lapinäidin kehtolaulu. ",
+        "source": []
+    },
+    {
+        "id": 4,
+        "title": "40 kaikkien aikojen Röllilaulua",
+        "cover": "/sites/default/games/musical_ferris_wheel/covers/levy4.jpg",
+        "description": "Tällä tuplalevyllä on 40 kaikkien aikojen Rölli-laulua. Mukana mm. Hömmelö haltija, Robotti Ruttunen, Tuhma Rölli, Häläpäti-laulu, Omituisten otusten kerho, Viimeinen dinosaurus, Riitasoinnun rakkaus ja tietenkin Itsensäpelottelemislaulu. ",
+        "source": []
+    },
+    {
+        "id": 5,
+        "title": "Satu Sopanen & Tuttiorkesteri: Soittorasia",
+        "cover": "/sites/default/games/musical_ferris_wheel/covers/levy5.jpg",
+        "description": "Satu Sopasen ja Tuttiorkesterin levyllä mm. popsitaan porkkanaa, ollaan piparkakkutalossa ja pidetään herkkujuhlia. Puput rokkaavat, Pikku pörriäinen pörrää ja Juoksee metsähiiroset. ",
+        "source": []
+    },
+    {
+        "id": 6,
+        "title": "Suosituimmat eläinlaulut",
+        "cover": "/sites/default/games/musical_ferris_wheel/covers/levy6.jpg",
+        "description": "Tämä tuplalevy on täynnä erilaisia karvaturreja ja muita mönkijäisiä. Mukana seikkailemassa mm. mäkeä laskeva jänöjussi, synttäreitään juhliva nalle, loikkiva kenguru, leikkisät koiranpennut ja rohkeat kissanpojat. ",
+        "source": []
+    },
+    {
+        "id": 7,
+        "title": "Wanhanajan lastenlauluja: Lasten suosikit alkuperäisesityksinä",
+        "cover": "/sites/default/games/musical_ferris_wheel/covers/levy7.jpg",
+        "description": "Tältä tuplalevyltä löytyvät kaikki iki-ihanat lastenlaulut! Mukana on mm. Päivänsäde ja menninkäinen, Putte Possun nimipäivät, Pieni ankanpoikanen, Mikkihiiri merihädässä, Kolme pientä porsasta ja Liisa ihmemaassa. Kaikki kappaleet ovat alkuperäisesityksinä. ",
+        "source": []
+    },
+    {
+        "id": 8,
+        "title": "Fröbelin palikat: Parhaat palat",
+        "cover": "/sites/default/games/musical_ferris_wheel/covers/levy8.jpg",
+        "description": "Parhaat palat –levylle on koottu suosikkeja ja hittejä levyiltä ja videoilta. Mukana mm. Huugi-Guugi, Jumppalaulu, Autot vanhanaikaiset, Sutsisatsi ja Hänkki-pänkki. Tämä levy laittaa varmasti Hippulat vinkumaan!",
+        "source": []
+    }
+]

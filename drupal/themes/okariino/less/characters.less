@@ -1,0 +1,343 @@
+
+.okariino-character {
+  position: absolute;
+  z-index: 100;
+  overflow: hidden;
+  padding: 15px;
+  left: -15px;
+  top: -15px;
+
+  img {
+    max-width: none;
+  }
+
+  img.hover {
+    display: none;
+  }
+}
+
+body.help-state {
+  #action-screens .okariino-character {
+    img.base {
+      display: none !important;
+    }
+
+    img.hover {
+      display: block !important;
+    }
+  }
+}
+
+.noadjust() {
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+#character-guide {
+  width: 156px;
+  height: 203px;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: visible;
+  left: auto;
+  top: auto;
+  padding: 0;
+
+  .transition(~"width 0.5s, height 0.5s");
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #olli-bubble {
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    display: none;
+    opacity: 0;
+
+    .transition(~"opacity 0.3s");
+  }
+
+  &.speaking {
+    #olli-bubble {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+#olli2map area {
+  border-width: 0;
+  outline: 0;
+}
+
+body.game-mode {
+  #character-guide {
+    width: 117px;
+    height: 152px;
+  }
+}
+
+#character-harakka {
+  margin-left: 11px;
+  margin-top: 43px;
+  position: absolute;
+}
+
+#character-olivia-1 {
+  margin-left: 4px;
+  margin-top: 228px;
+  position: absolute;
+}
+
+#character-luuri {
+  margin-left: 234px;
+  margin-top: 0;
+  position: absolute;
+}
+
+#character-pysakki {
+  margin-left: 120px;
+  margin-top: 281px;
+  position: absolute;
+}
+
+#character-kirjasto {
+  margin-left: 216px;
+  margin-top: 358px;
+  position: absolute;
+}
+
+#character-katusoittaja {
+  margin-left: 323px;
+  margin-top: 314px;
+  position: absolute;
+}
+
+#character-ohjaaja {
+  margin-left: 482px;
+  margin-top: 304px;
+  position: absolute;
+}
+
+#character-kino {
+  margin-left: 166px;
+  margin-top: 122px;
+  position: absolute;
+}
+
+#character-kani {
+  margin-left: 680px;
+  margin-top: 362px;
+  position: absolute;
+}
+
+#character-kuumailmapallo {
+  margin-left: 695px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+#character-kissa {
+  margin-left: 155px;
+  margin-top: 308px;
+  position: absolute;
+}
+
+#character-penkki {
+  margin-left: 221px;
+  margin-top: 324px;
+  position: absolute;
+}
+
+#character-olivia-2 {
+  margin-left: 340px;
+  margin-top: 230px;
+  position: absolute;
+}
+
+#character-kukat {
+  margin-left: 297px;
+  margin-top: 334px;
+  position: absolute;
+}
+
+#character-taiteilija {
+  margin-left: 0px;
+  margin-top: 288px;
+  position: absolute;
+}
+
+#character-tuubi-4 {
+  width: 85px;
+  height: 47px;
+  margin-left: 128px;
+  margin-top: 423px;
+  position: absolute;
+
+  .noadjust();
+}
+
+#character-teos {
+  margin-left: 75px;
+  margin-top: 385px;
+  position: absolute;
+}
+
+#character-tuubi-2 {
+  margin-left: 125px;
+  margin-top: 380px;
+  position: absolute;
+}
+
+#character-tuubi-3 {
+  width: 105px;
+  height: 55px;
+  margin-left: 2px;
+  margin-top: 417px;
+  position: absolute;
+}
+
+#character-karuselli {
+  margin-left: 578px;
+  margin-top: 90px;
+  position: absolute;
+}
+
+#character-laululintu-1 {
+  margin-left: 782px;
+  margin-top: 52px;
+  position: absolute;
+}
+
+#character-laululintu-2 {
+  margin-left: 45px;
+  margin-top: 255px;
+  position: absolute;
+}
+
+#character-laululintu-3 {
+  margin-left: 448px;
+  margin-top: 105px;
+  position: absolute;
+}
+
+#character-laululintu-4 {
+  margin-left: 624px;
+  margin-top: 84px;
+  position: absolute;
+}
+
+#character-laululintu-5 {
+  margin-left: 812px;
+  margin-top: 110px;
+  position: absolute;
+}
+
+#character-laululintu-6 {
+  margin-left: 270px;
+  margin-top: 170px;
+  position: absolute;
+}
+
+#character-laululintu-7 {
+  margin-left: 835px;
+  margin-top: 70px;
+  position: absolute;
+}
+
+#character-laululintu-8 {
+  margin-left: 245px;
+  margin-top: 325px;
+  position: absolute;
+}
+
+#character-viltti {
+  margin-left: 580px;
+  margin-top: 336px;
+  position: absolute;
+}
+
+#character-kruunu {
+  margin-left: 690px;
+  margin-top: 348px;
+  position: absolute;
+}
+
+#character-kitara {
+  margin-left: 620px;
+  margin-top: 388px;
+  position: absolute;
+}
+
+#character-peliohjain {
+  margin-left: 700px;
+  margin-top: 410px;
+  position: absolute;
+}
+
+#character-maailmanpyora {
+  margin-left: 85px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+#character-tahdet {
+  margin-left: 465px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+#character-palikat {
+  margin-left: 30px;
+  margin-top: 97px;
+  position: absolute;
+}
+
+#character-olivia-3 {
+  margin-left: 188px;
+  margin-top: 29px;
+  position: absolute;
+}
+
+#character-kivipolku {
+  margin-left: 86px;
+  margin-top: 252px;
+  position: absolute;
+}
+
+#character-lamppu {
+  margin-left: 327px;
+  margin-top: 22px;
+  position: absolute;
+}
+
+#character-kalastaja {
+  margin-left: 406px;
+  margin-top: 256px;
+  position: absolute;
+}
+
+#character-kirjastoauto {
+  margin-left: 526px;
+  margin-top: 86px;
+  position: absolute;
+}
+
+#character-kuski {
+  margin-left: 727px;
+  margin-top: 201px;
+  position: absolute;
+}
+
+#character-posti {
+  margin-left: 592px;
+  margin-top: 285px;
+  position: absolute;
+}

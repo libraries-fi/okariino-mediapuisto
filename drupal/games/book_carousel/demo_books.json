@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "title": "Watt, Melanie: Aaro, arka orava",
+    "cover": "/sites/default/games/book_carousel/images/aaro_arka.jpg",
+    "description": "Tunnethan jo Aaron? Aaro on pieni, söpö ja pelokas orava-poika, joka ei IKINÄ jätä pesäpuutaan, koska se tietää, että maailma on pienille oraville hyvin vaarallinen paikka. Pesäpuun ympäristössähän voi törmätä vaikka vihreään marsilaiseen, haihin tai tappajamehiläisiin, joita Aaro pelkää kaikkein eniten. Ei tule kuuloonkaan! Elämän tulee sujua tarkkojen rutiinien mukaan kaikkeen mahdolliseen kamalaan varautuen. Mutta siitä huolimatta, eräänä torstaiaamuna täsmälleen kello 9.37 sattuu jotain aivan yllättävää ja hämmentävää - tappajamehiläisen säikäyttämänä Aaro putoaa!!! Ja niin se tempautuu mukaan elämänsä Suurimpaan Seikkailuun...",
+    "source": []
+  },
+  {
+    "id": 2,
+    "title": "Mannström, Annika: Antto urheilee",
+    "cover": "/sites/default/games/book_carousel/images/antto_urheilee.jpg",
+    "description": "Urheileminen on mahtavaa - ainakin Anton ja Anton koko suvun mielestä. Tervetuloa valitsemaan omaa lajiasi ja nauttimaan liikunnan riemusta!",
+    "source": []
+  },
+  {
+    "id": 3,
+    "title": "Nopola, Sinikka ja Tiina: Gekko ja Puupponen",
+    "cover": "/sites/default/games/book_carousel/images/gekko_ja_puupponen.jpg",
+    "description": "Kun A. Gekko tutustuu eräänä päivänä sattumalta kotitalonsa rappukäytävässä mainostenjakaja Puupposeen, alkaa kahden toisilleen aiemmin tuntemattoman olennon elämässä ihan uusi luku ja ystävyys. Kun hienosteluun taipuvainen Gekko kuulee uuden tuttavansa esi-isien olleen alunperin nimeltään von Pudelssoneja, hän vaikuttuu todenteolla. Kun vielä käy ilmi, että Puupposen isä oli kotoisin Ruotsista, on Gekon mielestä Puupposen jo korkea aika laittaa pikaisesti tuumasta toimeen ja matkustaa Tukholmaan etsimään kuninkaanlinnasta sukulaisiaan. Niin ystävykset pakkaavat matkalaukkunsa ja tempautuvat mukaan elämänsä seikkailuun...",
+    "source": []
+  },
+  {
+    "id": 4,
+    "title": "Chaud, Benjamin: Hei hei, Luppis",
+    "cover": "/sites/default/games/book_carousel/images/hei_hei_luppis.jpg",
+    "description": "Pojalla on pehmopupu nimeltä Luppis. Se on ihan kiva, mutta ei siitä ole leikkikaveriksi. Eihän se osaa pelata edes jalkapalloa! Poika päättää hankkiutua pupusta eroon ja vie sen metsään. Mutta Luppis ei halua olla villikani, vaan roikkuu pojassa kiinni kuin takiainen. Lopulta hänen on sidottava se puuhun. Poika kääntyy kotia kohti, mutta huoli pupusta painaa mieltä. Selviääkö Luppis yksin suuressa metsässä? Hän palaa takaisin, mutta Luppista ei näy missään. Mihin pieni pupu on karannut? Pojan ei auta muu kuin ruveta etsimään. Ihastuttava kuvakirja ystävyydestä ja pienen pojan kasvamisesta!",
+    "source": []
+  },
+  {
+    "id": 5,
+    "title": "King, Daren: Hiirenkuonoleipiä",
+    "cover": "/sites/default/games/book_carousel/images/hiirenkuonoleipia.jpg",
+    "description": "Pauli Hiiri asuu ystäviensä Peltisen ja koriste-enkeli Sandran kanssa pahvisessa kenkälaatikossa puutarhan perällä. Paulin on hankala tavata muita hiiriä, koska hän on hyvin allerginen juustolle. Juusto saa hänen takapuolensa muuttumaan siniseksi ja täysin karvattomaksi. Lisäksi hänen häntänsä vääntyy kysymysmerkin muotoiseksi.<br /><br />Eräänä päivänä Pauli uskaltautuu ystävineen hiirten ravintolaan, joka on ihmisravintolan nurkassa, antiikkilipaston alla. He eivät löydä ruokalistalta sopivaa tilattavaa ja hiipivät ihmisten puolelle. Kauhukseen he huomaavat, että ravintolassa tarjoillaan hiirenkuonoleipiä. Hiirten keskuudessa liikkunut huhu on sittenkin totta!<br /><br />Pauli päättää lopettaa tuon iljettävän touhun ja kerää kokoon hurjan hiirijengin. Jäljet johtavat pääministerin luokse ja sieltä salaiseen hiirenkuonotehtaaseen. Luvassa on huumoria ja huimaa menoa, kun hiiret ryhtyvät suoraan toimintaan.",
+    "source": []
+  },
+  {
+    "id": 6,
+    "title": "Dyer, Sarah: Hirmun hauska päivä töissä",
+    "cover": "/sites/default/games/book_carousel/images/hirmun_hauska_paiva_toissa.jpg",
+    "description": "Kun isä lähtee aamulla töihin - minne hän oikein menee? Sen Hirmu-poika selvittää ja kertoo vastauksen muillekin utelialle tässä kirjassa.",
+    "source": [
+      {
+        "category": "audio",
+        "type": "embed",
+        "title": "Esittelyvideo Kirjastokaista-palvelussa",
+        "embed":"<iframe src=\"http:\/\/www.kirjastokaista.fi\/embed_audio.php?postid=45599\" width=\"460\" height=\"200\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen><\/iframe>"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Huovi, Hannele: Jättityttö ja Pirhonen",
+    "cover": "/sites/default/games/book_carousel/images/jattitytto_ja_pirhonen.jpg",
+    "description": "Tyyne Heikkilä on maailman viimeinen jättiläistyttö. Tyynen mielestä jättiläisen elämä on hankalaa, sillä hänen on jatkuvasti varottava tallomasta pienten ihmisten päälle ja kun häntä itkettää, hänen kyyneleensä aiheuttavat tulvia. Tyyne on hyvin yksinäinen. Pertti Pirhonen taas on erittäin pieni poika. Hän pitää isoista asioista kuten kuusta ja planeetoista. Mitä tapahtuukaan, kun Tyyne ja Pertti kohtaavat?",
+    "source": [
+      {
+        "category": "audio",
+        "type": "embed",
+        "embed": "<iframe src=\"http:\/\/www.kirjastokaista.fi\/embed_audio.php?postid=45595\" width=\"460\" height=\"200\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen><\/iframe>"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Peltoniemi, Sari: Kerppu ja tyttö",
+    "cover": "/sites/default/games/book_carousel/images/kerppu_ja_tytto.jpg",
+    "description": "Kerppu on pieni musta koira, joka haluaa syntymäpäivälahjaksi lemmikkiystävän. Toive toteutuu ja vanhemmat antavat Kerpulle tytön, joka on ihmislapsi. Mutta tyttö ei osoittaudukaan helpoksi lemmikiksi, jonka kanssa voisi vain leikkiä. Tyttöä pitää myös ruokkia, hoitaa ja kouluttaa. Lämminhenkinen tarina kertoo koiran ja ihmisen välisestä ystävyydestä ja yhdessäolosta, joka joskus voi sisältää kommelluksia sekä mutkikkaitakin tilanteita.",
+    "source": []
+  },
+	{
+    "id": 9,
+    "title": "Long, Jonathan: Koira joka osasi kaivaa",
+    "cover": "/sites/default/games/book_carousel/images/koira_joka_osasi_kaivaa.jpg",
+    "description": "Helmeri-koiran muisti ei ollenkaan pelaa eräänä aamuna. Minne ihmeeseen se on haudannut rakkaimman luunsa? Ei auta muu kuin aloittaa kaivaminen. Tehtävä osoittautuu pian kuitenkin paljon odotettua vaativammaksi. Etkä taatusti arvaa, mitä kaikkea omalta takapihalta voikaan löytyä...<br /><br />Hulvaton, lorumuodossa kerrottu tarina ja taidokkaat, pikkutarkkoja yksityiskohtia sisältävät, hauskat kuvat tekevät kirjasta yhden vuoden 2009 parhaista kuvakirjoista.",
+    "source": []
+  },
+  {
+    "id": 10,
+    "title": "Jeffers, Oliver: Lentävä pingviini",
+    "cover": "/sites/default/games/book_carousel/images/lentava_pingviini.jpg",
+    "description": "Pojan parhaalla ystävällä, Pingviinillä, on suuri unelma: se haluaa oppia lentämään. Onhan sillä toki siivet, mutta hyvin pian käy selväksi, ettei niistä ole lentämisessä kovinkaan paljon apua. Mikä nyt neuvoksi?",
+    "source": []
+  },
+  {
+    "id": 11,
+    "title": "Cousins, Lucy: Maisa käy museossa",
+    "cover": "/sites/default/games/book_carousel/images/maisa_kay_museossa.jpg",
+    "description": "Museo on tosi mielenkiintoinen paikka - ainakin Maisan ja hänen ystäviensä mielestä. Ja mitä kaikkea museosta löytyykään! Katso, miksi Maisan päivä sujui niin rattoisasti!",
+    "source": []
+  },
+  {
+    "id": 12,
+    "title": "Niemelä, Reetta: Miljan kevät",
+    "cover": "/sites/default/games/book_carousel/images/miljan_kevat.jpg",
+    "description": "Milja Mansikka matkustaa kevään koittaessa ukkinsa Ukon kanssa maalle. Päivät kuluvat rattoisasti punamultaisen tuvan pihapiirissä luonnon heräämistä ihmetellessä ja Ukon tarinoita kuunnellessa. Tervetuloa mukaan seuraamaan kurkien paluuta, eläinten kevätpuuhia ja maan puhkeamista kukkaan!",
+    "source": []
+  }
+]

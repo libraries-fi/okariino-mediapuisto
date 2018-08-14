@@ -1,0 +1,244 @@
+{
+  "title": "Pieni soittoniekka",
+  "pages": [
+    {
+      "characters": {
+        "hedgehog": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "siili"
+        },
+        "rabbit": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "jänis"
+        },
+        "bird": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "lintu"
+        },
+        "cat": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "kissa"
+        }
+      },
+      "audio": "#audio",
+      "text": "Elipä kerran pieni _____,"
+    },
+    {
+      "characters": {
+        "shed": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "vajassa"
+        },
+        "tree": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "puussa"
+        },
+        "house": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "talossa"
+        },
+        "windmill": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "tuulimyllyssä"
+        }
+      },
+      "audio": "#audio",
+      "text": "joka asui vanhassa _____."
+    },
+    {
+      "characters": {
+        "bowtie": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "rusetin"
+        },
+        "scarf": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "huivin"
+        },
+        "cap": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "lippalakin"
+        },
+        "hat": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "hatun"
+        }
+      },
+      "audio": "#audio",
+      "text": "Eräänä päivänä se laittoi päähänsä hienon _______,"
+    },
+    {
+      "characters": {
+        "flute": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "huilun"
+        },
+        "guitar": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "kitaran"
+        },
+        "drum": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "rummun"
+        },
+        "accordion": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "haitarin"
+        }
+      },
+      "audio": "#audio",
+      "text": "otti ______ mukaansa"
+    },
+    {
+      "characters": {
+        "park": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "puistoon"
+        },
+        "street": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "kadulle"
+        },
+        "beach": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "rannalle"
+        },
+        "concert": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "konserttiin"
+        }
+      },
+      "audio": "#audio",
+      "text": " ja lähti soittamaan ______."
+    },
+    {
+      "characters": {
+        "dogs": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "koiria"
+        },
+        "mice": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "hiiriä"
+        },
+        "goblins": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "peikkoja"
+        },
+        "elves": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "tonttuja"
+        }
+      },
+      "audio": "#audio",
+      "text": "Kaunista soittoa kerääntyi kuuntelemaan joukko _____,"
+    },
+    {
+      "characters": {
+        "flowers": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "kukkia"
+        },
+        "presents": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "lahjoja"
+        },
+        "claps": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "taputuksia"
+        },
+        "money": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "rahaa"
+        }
+      },
+      "audio": "#audio",
+      "text": "ja se sai niiltä kiitokseksi paljon ______."
+    },
+    {
+      "characters": {
+        "advert": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "lehti-ilmoituksella"
+        },
+        "bottle": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "pullopostilla"
+        },
+        "internet": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "internetistä"
+        },
+        "friends": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "ystävien avulla"
+        }
+      },
+      "audio": "#audio",
+      "text": "Olisipa vielä soittokaveri, huokaisi pieni soittoniekka, ja päätti etsiä sellaista ____________."
+    },
+    {
+      "characters": {
+        "hedgehogs_sculpin": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "Siilin Simppu"
+        },
+        "rabbits_run": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "Jäniksen Juoksu"
+        },
+        "birds_flight": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "Linnun Lento"
+        },
+        "cats_meow": {
+          "icon": "#image",
+          "audio": "#audio",
+          "text": "Kissan Kirnau"
+        }
+      },
+      "audio": "#audio",
+      "text": "Vastauksia tuli niin paljon, että pieni soittoniekka päätti perustaa orkesterin. Orkesterin nimeksi tuli ______________."
+    },
+    {
+      "characters": {},
+      "audio": "#audio",
+      "text": "Mitä kaikkea soittokaverukset keksivätkään? Keksi tarinalle jatkoa..."
+    }
+  ]
+}

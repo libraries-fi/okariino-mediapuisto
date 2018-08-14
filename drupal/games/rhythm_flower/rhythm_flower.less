@@ -1,0 +1,211 @@
+
+.transition(@arguments) {
+  -moz-transition: @arguments;
+  -webkit-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments,
+}
+
+.rotate(@deg) {
+  -moz-transform: rotate(@deg);
+  -webkit-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+
+.square(@size) {
+  width: @size;
+  height: @size;
+}
+
+#rf-board {
+  background-color: #ccffb6;
+}
+
+#rf-game-view {
+  background: url('/sites/default/games/rhythm_flower/images/flower.png') no-repeat center 140px #ccffb6;
+}
+
+#rf-channels {
+  width: 775px;
+  height: 483px;
+  position: relative;
+
+  li {
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    cursor: pointer;
+    list-style-type: none;
+    overflow: hidden;
+
+    a {
+      width: inherit;
+      height: inherit;
+      display: block;
+
+      &.muted {
+        opacity: 0.3;
+      }
+    }
+
+    img {
+      max-width: none !important;
+      width: 1200px;
+      height: 150px;
+    }
+  }
+
+  #rf-channel-1 {
+    top: 23px;
+    left: 353px;
+    width: 90px;
+
+//    .square(126px);
+//    .rotate(170deg);
+  }
+
+  #rf-channel-2 {
+    top: 45px;
+    left: 444px;
+    width: 140px;
+
+//    .square(77px);
+
+    img  {
+      margin-left: -200px;
+    }
+  }
+
+  #rf-channel-3 {
+    top: 190px;
+    left: 477px;
+    height: 100px;
+
+//    .square(112px);
+//    .rotate(120deg);
+
+    img  {
+      margin-left: -400px;
+    }
+  }
+
+  #rf-channel-4 {
+    top: 270px;
+    left: 400px;
+    width: 125px;
+
+//    .rotate(160deg);
+
+    img  {
+      margin-left: -600px;
+    }
+  }
+
+  #rf-channel-5 {
+    top: 240px;
+    left: 243px;
+    width: 140px;
+
+//    .square(119px);
+//    .rotate(190deg);
+
+    img  {
+      margin-left: -800px;
+    }
+  }
+
+  #rf-channel-6 {
+    top: 142px;
+    left: 206px;
+    height: 100px;
+
+//    .square(105px);
+//    .rotate(150deg);
+
+    img  {
+      margin-left: -1000px;
+    }
+
+  }
+}
+
+#rf-toggle-play {
+  background: url('/sites/default/themes/okariino/images/btn-h80.png') no-repeat;
+  background-position: -500px 0;
+  border-radius: 40px;
+  text-indent: -10000px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: none;
+
+  &:hover {
+    box-shadow: 1px 1px 3px 0 #777;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px 2px #fff;
+  }
+
+  &:active,
+  &.pressed {
+    background-position: -600px 0;
+  }
+
+  .pause {
+    display: none;
+  }
+
+  span {
+    margin-left: -5px;
+  }
+}
+
+#rf-seeker {
+  width: 600px;
+  height: 10px;
+  border-width: 0;
+  margin-left: 140px;
+  position: absolute;
+  bottom: 34px;
+  border-radius: 5px;
+
+  #rf-seeker-grain {
+    min-width: 5px;
+    height: 10px;
+    background: #e0482a;
+    position: absolute;
+    //top: -5px;
+    left: -5px;
+
+    border-radius: 4px;
+
+    .transition(~"width 0.5s linear");
+  }
+
+  .bar {
+    border: none;
+  }
+}
+
+#rf-loading-screen {
+  #rf-loading {
+    width: 40%;
+    color: white;
+    margin: 200px auto 0;
+
+    #rf-loading-progress {
+      height: 40px;
+    }
+
+    .bar {
+      margin-left: -5px;
+      border: none;
+    }
+
+  }
+}

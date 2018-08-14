@@ -1,0 +1,215 @@
+
+@images = '/sites/default/themes/okariino/images';
+
+/**
+ * Base class for game boards ie. game containers
+ */
+.game-board {
+  z-index: 999;
+  background-color: black;
+  display: none;
+
+  a {
+    cursor: pointer;
+  }
+
+  ul.thumbs,
+  ol.thumbs {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    &.maxed {
+      margin: 80px 50px;
+    }
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0 5px 5px 0;
+
+      img {
+        width: 120px;
+        height: 120px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .jingle:hover {
+    cursor: pointer;
+  }
+}
+
+/**
+ * Base class for board-size game layers
+ */
+.game-overlay {
+  width: auto;
+  height: auto;
+  background-color: #444;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+/**
+ * Base class for game layers that should cover the whole browser viewport
+ */
+.game-fullscreen {
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+
+  .gb-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.game-pager {
+  padding: 0;
+  margin: 0 0 0 100px;
+//   text-align: center;
+
+  li {
+    display: inline;
+  }
+
+  a {
+    background-color: rgba(255, 255, 255, .5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 0 0 3px 3px;
+    font-weight: bold;
+  }
+}
+
+.game-slider {
+  width: auto;
+  padding: 0;
+  margin: 30px 50px 0;
+  text-align: center;
+
+  a {
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/**
+ * Global toolbar that each game does have
+ */
+.game-toolbar {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 9999;
+
+  a {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-right: 10px;
+    line-height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 0 #777;
+
+    &:hover {
+      box-shadow: 1px 1px 3px 0 #777;
+    }
+
+    &:active {
+      box-shadow: 0 0 5px 2px #fff;
+    }
+
+    &.game-button {
+      border-radius: 20px;
+    }
+
+    > span {
+      display: none;
+    }
+  }
+}
+
+.game-button {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+/**
+ * Standard 'close' button
+ */
+.gb-close {
+  background: url(~'@{images}/btn-h40.png') no-repeat;
+  background-position: 0 0;
+}
+
+/**
+ * Standard 'go back' button
+ */
+.gb-back {
+  background: url(~'@{images}/btn-h40.png') no-repeat;
+  background-position: -50px 0;
+}
+
+/**
+ * Standard 'restart' button
+ */
+.gb-restart {
+  background: url(~'@{images}/btn-h40.png') no-repeat;
+  background-position: -100px 0;
+}
+
+/**
+ * Standard 'archive' button
+ */
+.gb-archive {
+  background: url(~'@{images}/btn-h40.png') no-repeat;
+  background-position: -150px 0;
+}
+
+/*
+ * Loading screen
+ */
+#ls-board {
+  background-color: #B7CCF7;
+  text-align: center;
+
+  img {
+    width: 100px;
+    margin-top: 190px;
+  }
+}
+
+#ls-progress-bar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: .5;
+
+  #ls-progress {
+    width: 39%;
+    height: 15px;
+    background-color: blue;
+  }
+}

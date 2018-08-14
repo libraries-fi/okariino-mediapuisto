@@ -1,0 +1,181 @@
+#mr-board {
+  #mr-select-movie {
+    background: url('images/bg.jpg') left top no-repeat #ffaca2;
+
+    .jingle {
+      position: absolute;
+      left: 813px;
+      top: 171px;
+    }
+
+    #mr-decoration-items {
+      li {
+        position: absolute;
+        list-style-type: none;
+        display: block;
+      }
+
+      #mr-movie-poster {
+        left: 125px;
+        top: 61px;
+      }
+
+      #mr-popcorn {
+        top: 0;
+        left: 257px;
+      }
+
+      #mr-ticket-window {
+        left: 1px;
+        top: 175px;
+      }
+      #mr-movie-poster2 {
+        left: 729px;
+        top: 161px;
+      }
+
+      #mr-threedglasses {
+        top: 34px;
+        left: 485px;
+      }
+
+      #mr-entrance {
+        left: 465px;
+        top: 168px;
+      }
+    }
+
+    #mvr-link-to-archive {
+      width: 80px;
+      height: 80px;
+      display: block;
+      background: url('/sites/default/themes/okariino/images/btn-h80.png') 100px 0;
+      position: absolute;
+      left: 15px;
+      top: 15px;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  #mr-movie {
+    background-color: #f7c2bd;
+
+    #mr-movie-cover-pane {
+      height: 100%;
+      text-align: center;
+      width: 200px;
+      float: left;
+      margin-left: 35px;
+      margin-top: 65px;
+
+      img {
+        box-shadow: 10px 10px 20px #777;
+      }
+
+    }
+
+    #mr-movie-content-pane {
+      position: absolute;
+      margin-top: 65px;
+      margin-left: 270px;
+      margin-right: 40px;
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        margin-top: -9px;
+      }
+    }
+  }
+
+  #mvr-archive-view {
+    background-color: #AA534C;
+
+    .item {
+      a {
+//         width: 140px;
+//         height: 100%;
+//         height: 160px;
+        display: inline-block;
+        overflow: hidden;
+        margin: 10px;
+        text-align: center;
+
+        img {
+          width: auto;
+          height: 160px;
+          max-width: none;
+        }
+      }
+    }
+
+    .game-pager {
+      float: none;
+      margin-top: 10px;
+      margin-left: 0;
+      text-align: center;
+
+      li {
+        display: inline;
+        list-style-type: none;
+        margin-right: 5px;
+      }
+
+      a {
+        padding: 10px 15px;
+        background: red;
+        color: black;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 700;
+
+        &.cur {
+          background-color: #fff;
+        }
+
+        &:hover {
+          background-color: #fff;
+        }
+
+        span {
+          color:#eefa69;
+          font-family:arial;
+          font-size:1.5em;
+          font-weight:700;
+        }
+      }
+    }
+
+    .carousel-control {
+      top: 48%;
+      border: none;
+      outline: none;
+
+      &.left {
+        text-indent: -10000px;
+        background: url(images/btn.png) no-repeat;
+        background-position: 0 0;
+      }
+
+      &.right {
+        text-indent: -10000px;
+        background: url(images/btn.png) no-repeat;
+        background-position: -40px 0;
+      }
+    }
+  }
+
+  #mr-media {
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 80px;
+
+    #mr-media-frame {
+      max-height: 405px;
+    }
+  }
+}
+

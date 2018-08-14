@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "templateId": 1,
+    "created": "2013-06-01 12:51",
+    "url": "/sites/default/games/coloring_archive/svg/ohjaaja.svg",
+    "user": {
+      "name": "Samu Juvonen",
+      "age": 25
+    }
+  },
+  {
+    "id": 2,
+    "templateId": 1,
+    "created": "2013-06-01 12:51",
+    "url": "/sites/default/games/coloring_archive/svg/olivia.svg",
+    "user": {
+      "name": "Samu Juvonen",
+      "age": 25
+    }
+  },
+  {
+    "id": 3,
+    "templateId": 1,
+    "created": "2013-06-01 12:51",
+    "url": "/sites/default/games/coloring_archive/svg/olli.svg",
+    "user": {
+      "name": "Samu Juvonen",
+      "age": 25
+    }
+  },
+  {
+    "id": 4,
+    "templateId": 1,
+    "created": "2013-06-01 12:51",
+    "url": "/sites/default/games/coloring_archive/svg/ohjaaja.svg",
+    "user": {
+      "name": "Samu Juvonen",
+      "age": 25
+    }
+  },
+  {
+    "id": 5,
+    "templateId": 1,
+    "created": "2013-06-01 12:51",
+    "url": "/sites/default/games/coloring_archive/svg/olivia.svg",
+    "user": {
+      "name": "Samu Juvonen",
+      "age": 25
+    }
+  }
+]

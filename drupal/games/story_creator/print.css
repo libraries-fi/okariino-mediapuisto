@@ -1,0 +1,84 @@
+.sc-character {
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+}
+
+.sc-character.checked {
+    z-index: 999;
+}
+
+.sc-character input {
+    display: none;
+}
+
+.sc-page {
+    width: 300px;
+    height: 135px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.storyline {
+/*     float: left; */
+}
+
+.objects {
+    width: 125px;
+    height: 125px;
+    float: right;
+}
+
+p {
+    padding-top: 30px;
+}
+
+#sc-print-story {
+    display: none;
+}
+
+.sc-character img {
+  margin-left: 0px;
+}
+.sc-character:nth-child(2n) img {
+  margin-left: -125px;
+}
+.sc-character:nth-child(3n) img {
+  margin-left: -250px;
+}
+.sc-character:nth-child(4n) img {
+  margin-left: -375px;
+}
+.sc-page:nth-child(2n) img {
+  margin-top: 0px;
+}
+.sc-page:nth-child(3n) img {
+  margin-top: -125px;
+}
+.sc-page:nth-child(4n) img {
+  margin-top: -250px;
+}
+.sc-page:nth-child(5n) img {
+  margin-top: -375px;
+}
+.sc-page:nth-child(6n) img {
+  margin-top: -500px;
+}
+.sc-page:nth-child(7n) img {
+  margin-top: -625px;
+}
+.sc-page:nth-child(8n) img {
+  margin-top: -750px;
+}
+.sc-page:nth-child(9n) img {
+  margin-top: -875px;
+}
+.sc-page:nth-child(10n) img {
+  margin-top: -1000px;
+}
+.sc-page:last-child .objects {
+    display: none;
+}

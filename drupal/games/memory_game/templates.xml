@@ -1,0 +1,30 @@
+<!-- Underscore.js templates for the widgets -->
+<templates>
+  <template id="choose-level-view">
+    <![CDATA[
+      <% _(levels).each(function(l, i) { %>
+        <li>
+          <a data-pairs="<%= l %>"><img src="/sites/default/games/memory_game/images/pairs-<%= l %>.png" alt="<%= l %> paria" /></a>
+        </li>
+      <% }) %>
+    ]]>
+  </template>
+
+  <template id="memory-game-view">
+    <![CDATA[
+      <ul id="mg-cards" class="pairs-<%= cards.length/2 %>">
+        <% _(cards).each(function(c, i) { %>
+          <li data-card-name="<%= c.name %>">
+            <a><img src="<%= c.image %>" alt="<%= i %> <%= c.name %>"/></a>
+          </li>
+        <% }) %>
+      </ul>
+    ]]>
+  </template>
+
+  <template id="card-view">
+    <![CDATA[
+      <img src="<%= image %>" data-card-name="<%= name %>" alt="<%= name %>"/>
+    ]]>
+  </template>
+</templates>

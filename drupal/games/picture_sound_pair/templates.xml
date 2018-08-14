@@ -1,0 +1,30 @@
+<templates>
+  <template id="psp-game-view">
+    <![CDATA[
+      <ul id="psp-puzzles">
+        <% _(puzzles).each(function(p, i) { %>
+          <li>
+            <img src="<%= p.get('picture') %>" alt="puzzle <%= p.id %>"/>
+          </li>
+        <% }) %>
+      </ul>
+      <ul id="psp-notes">
+        <% _.each(sounds, function(sound, i) { %>
+          <li>
+            <label class="note">
+              <input type="radio" name="sound" value="<%= sound %>"/>
+              <img src="<%= noteUrl(notes[i]) %>" alt="Sound <%= i %>"/>
+              <i class="psp-radio">
+                <span class="radio-inner"></span>
+              </i>
+            </label>
+            <button type="button" class="play" data-id="<%= sound %>">
+              <span>Play</span>
+            </button>
+          </li>
+        <% }) %>
+      </ul>
+      <img class="jingle" src="sites/default/games/picture_sound_pair/images/olivia_jingle.png" data-jingle="media" data-bubble="right"/>
+    ]]>
+  </template>
+</templates>
